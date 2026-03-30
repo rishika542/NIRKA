@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-brands, .fa-regular {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-weight: 900 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p, a, span, li, input, textarea, button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+}
+
+.privacy-policy {
+  padding: 80px 20px;
+  background: #f8fafc;
+  
+}
+
+.privacy-policy .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Main Heading */
+.privacy-policy h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111827;
+  position: relative;
+}
+
+/* Effective Date */
+.privacy-policy p strong {
+  color: #111827;
+}
+
+/* Section Headings */
+.privacy-policy h2 {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #1f2937;
+  border-left: 4px solid #4f46e5;
+  padding-left: 12px;
+}
+
+.privacy-policy h3 {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* Paragraphs */
+.privacy-policy p {
+  margin-top: 12px;
+  line-height: 1.8;
+  color: #4b5563;
+  font-size: 15.5px;
+}
+
+/* Lists */
+.privacy-policy ul {
+  margin-top: 12px;
+  padding-left: 25px;
+}
+
+.privacy-policy ul li {
+  margin-bottom: 8px;
+  color: #4b5563;
+  font-size: 15.5px;
+}
+
+/* Contact Info Section */
+.privacy-policy h2:last-of-type {
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 50px 15px;
+  }
+
+  .privacy-policy .container {
+    padding: 30px 25px;
+  }
+
+  .privacy-policy h1 {
+    font-size: 30px;
+  }
+
+  .privacy-policy h2 {
+    font-size: 20px;
+  }
+
+  .privacy-policy p,
+  .privacy-policy ul li {
+    font-size: 14px;
+  }
+}

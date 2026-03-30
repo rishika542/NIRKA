@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirka Business Solutions</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/power.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header-wrapper">
+
+  <div class="top-header">
+    <div class="top-left">
+      <div class="left-item"><img src="images/Dynamics_365_Business_Central_logo.svg.webp" alt="Microsoft"><span>Microsoft Dynamics 365</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/microsoft (2).png" alt="Microsoft"><span>Microsoft Partner</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/world.png" alt="India"><span>India</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/united-arab-emirates.png" alt="UAE"><span>UAE</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/united-states.png" alt="USA"><span>USA</span></div>
+    </div>
+    <div class="top-right">
+      <a href="mailto:sales@infinixotech.com">
+        <svg class="email-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6H20C21.1 6 22 6.9 22 8V16C22 17.1 21.1 18 20 18H4C2.9 18 2 17.1 2 16V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="2"/>
+          <path d="M22 8L12 13L2 8" stroke="white" stroke-width="2"/>
+        </svg>
+        sales@infinixotech.com
+      </a>
+      <span>|</span>
+      <a href="tel:+919428084866">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6.62 10.79C8.06 13.66 10.34 15.94 13.21 17.38L15.41 15.18C15.79 14.8 16.36 14.68 16.84 14.88C18.27 15.43 19.84 15.7 21.5 15.7C22.33 15.7 23 16.37 23 17.2V21.5C23 22.33 22.33 23 21.5 23C10.95 23 2 14.05 2 3.5C2 2.67 2.67 2 3.5 2H7.8C8.63 2 9.3 2.67 9.3 3.5C9.3 5.16 9.57 6.73 10.12 8.16C10.32 8.64 10.2 9.21 9.82 9.59L7.62 11.79Z" stroke="white" stroke-width="2"/>
+        </svg>
+        +91 94280 84866
+      </a>
+    </div>
+  </div>
+
+<!--NAVBAR -->
+<div class="navbar">
+  <div class="logo-section">
+    <a href="/"><img src="images/nirka_FINAL-removebg-preview.webp" alt="NIRKA Logo"></a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about-us">About Us</a>
+
+  <!-- SERVICES DROPDOWN -->
+    <div class="nav-dropdown">
+      <a  class="nav-drop-trigger">
+        Services
+       
+      </a>
+
+      <div class="dropdown-menu">
+        <div class="dropdown-inner">
+        <!--Microsoft Dynamics 365 -->
+          <div class="drop-col">
+            <div class="drop-col-title">Microsoft Dynamics 365</div>
+            <a href="/business-central" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">Dynamics 365</div>
+                <div class="drop-item-sub">Finance & Accounting</div>
+                <div class="drop-item-sub">Supply Chain </div>
+                <div class="drop-item-sub">Sales & Service</div>
+                <div class="drop-item-sub">Project Management </div>
+              </div>
+            </a>
+            <a href="/crm" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">D 365 Sales(CRM)</div>
+               <div class="drop-item-sub">Sales Automation</div>
+               <div class="drop-item-sub">Marketing </div>
+               <div class="drop-item-sub">Customer Service</div>
+               <div class="drop-item-sub">AI insights </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="drop-divider"></div>
+
+          <!--Power Platform -->
+          <div class="drop-col">
+            <div class="drop-col-title">Microsoft Power Platform</div>
+            <a href="/power-platform" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">Power Platform</div>
+                <div class="drop-item-sub">Power BI</div>
+                <div class="drop-item-sub">Power Apps</div>
+                <div class="drop-item-sub">Power Virtual Agents</div>
+                <div class="drop-item-sub">Power Automate </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="drop-divider"></div>
+
+          <!-- Web & App Dev -->
+          <div class="drop-col">
+            <div class="drop-col-title">Development</div>
+            <a href="/web-app-development" class="drop-item">
+              
+              <div>
+                <div class="drop-item-title">Web & App Development</div>
+                <div class="drop-item-sub">Web Development</div>
+                <div class="drop-item-sub">App Development</div>
+                <div class="drop-item-sub">E-commerce</div>
+                <div class="drop-item-sub">MS integration</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM CTA BAR -->
+        <div class="drop-footer">
+          <span>Ready to transform your business?</span>
+          <a href="/contact-us" class="drop-cta">Talk to an Expert →</a>
+        </div>
+
+      </div>
+    </div>
+   
+    <a href="/careers">Career At NIRKA</a>
+    <a href="/why-us">Why NIRKA?</a>
+   <a href="/contact-us" class="nav-btn">Contact Us</a>
+  </nav>
+</div>
+
+
+<!--MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-menu" onclick="toggleMenu()">← Back</div>
+  <a href="/" class="mobile-link">Home</a>
+  <a href="/about-us" class="mobile-link">About Us</a>
+
+  <!-- Mobile Services Accordion -->
+  <div class="mobile-accordion">
+    <div class="mobile-acc-trigger" onclick="toggleMobileAcc(this)">
+      Services
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+        <path d="M6 9L12 15L18 9" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="mobile-acc-body">
+      <div class="mobile-acc-section">Microsoft Dynamics 365</div>
+      <a href="/business-central" class="mobile-link sub">Business Central 365</a>
+      <a href="/crm" class="mobile-link sub">Dynamics 365 Sales(CRM)</a>
+      <div class="mobile-acc-section">Power Platform</div>
+      <a href="/power-platform" class="mobile-link sub">Power Platform</a>
+      <div class="mobile-acc-section">Development</div>
+      <a href="/web-app-development" class="mobile-link sub">Web & App Development</a>
+    </div>
+  </div>
+
+  <a href="/careers" class="mobile-link">Career At NIRKA</a>
+  <a href="/why-us" class="mobile-link">Why NIRKA?</a>
+  <a href="/contact-us" class="mobile-link">Contact Us</a>
+</div>
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+</header>
+
+<!-- Floating Contact Buttons -->
+<div class="contact-widget">
+  <a href="mailto:sales@infinixotech.com" class="contact-btn email" title="Email Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M4 6H20C21.1 6 22 6.9 22 8V16C22 17.1 21.1 18 20 18H4C2.9 18 2 17.1 2 16V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="2"/>
+      <path d="M22 8L12 13L2 8" stroke="white" stroke-width="2"/>
+    </svg>
+  </a>
+  <a href="tel:+919428084866" class="contact-btn call" title="Call Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M6.62 10.79C8.06 13.66 10.34 15.94 13.21 17.38L15.41 15.18C15.79 14.8 16.36 14.68 16.84 14.88C18.27 15.43 19.84 15.7 21.5 15.7C22.33 15.7 23 16.37 23 17.2V21.5C23 22.33 22.33 23 21.5 23C10.95 23 2 14.05 2 3.5C2 2.67 2.67 2 3.5 2H7.8C8.63 2 9.3 2.67 9.3 3.5C9.3 5.16 9.57 6.73 10.12 8.16C10.32 8.64 10.2 9.21 9.82 9.59L7.62 11.79Z" stroke="white" stroke-width="2"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/919428084866" class="contact-btn whatsapp" title="Chat on WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24">
+      <path fill="white" d="M12.04 2C6.53 2 2 6.48 2 12c0 1.93.57 3.72 1.55 5.23L2 22l4.92-1.51A9.95 9.95 0 0 0 12.04 22C17.55 22 22 17.52 22 12S17.55 2 12.04 2zm5.67 14.27c-.24.67-1.4 1.29-1.93 1.36-.5.07-1.13.1-1.83-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.16-4.95-4.36-.15-.2-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1-2.41.26-.29.58-.36.77-.36h.56c.18 0 .42-.07.66.5.24.58.83 2.01.9 2.15.07.14.12.3.02.48-.1.18-.15.29-.29.45-.14.16-.3.35-.43.47-.14.14-.28.3-.12.58.16.29.7 1.15 1.51 1.86 1.04.93 1.92 1.22 2.2 1.36.28.14.45.12.61-.07.16-.18.71-.83.9-1.11.18-.29.36-.24.61-.14.24.1 1.55.73 1.82.86.27.14.45.2.52.31.07.11.07.67-.17 1.34z"/>
+    </svg>
+  </a>
+</div>
+
+<!--HER0-->
+<section class="service-hero">
+<div class="logo-3d">
+  <img src="images/Microsoft_Power_Platform_logo.svg.png" alt="Power Platform Logo">
+  <span>Microsoft Power Platform</span>
+</div>
+<div class="hero-content">
+
+<h1>Accelerate Innovation with Power Platform</h1>
+
+<p>
+Empower your organization with low-code tools to build apps,
+automate processes, analyze data, and deliver smarter solutions.
+</p>
+
+</div>
+
+<!--CARD-->
+<div class="service-cards">
+
+<a href="#powerbi" class="service-card">
+
+<h3>Power BI</h3>
+<p>Turn business data into interactive dashboards and insights.</p>
+</a>
+
+<a href="#powerapps" class="service-card">
+
+<h3>Power Apps</h3>
+<p>Build custom business apps quickly with low-code tools.</p>
+</a>
+
+<a href="#pva" class="service-card">
+
+<h3>Power Virtual Agents</h3>
+<p>Create AI chatbots to automate support and conversations.</p>
+</a>
+
+<a href="#powerauto" class="service-card">
+
+<h3>Power Automate</h3>
+<p>Automate workflows and streamline business processes.</p>
+</a>
+</div>
+</section>
+
+<!--powerbi-->
+<section class="powerbi-section" id="powerbi">
+<div class="apps-intro">
+
+<h2>Turn Data Into Insight with Power BI</h2>
+
+<p>
+Visualize your business data, uncover trends, and make smarter decisions 
+with interactive dashboards powered by Microsoft Power BI.
+</p>
+
+</div>
+<div class="powerbi-container">
+
+<!-- LEFT -->
+<div class="bi-dashboard">
+
+<div class="kpi">
+<h3>Total Revenue</h3>
+<p class="counter" data-target="180">0</p>
+<span>% Growth</span>
+</div>
+
+<div class="chart-area">
+
+<div class="bar" style="--h:70%"></div>
+<div class="bar" style="--h:90%"></div>
+<div class="bar" style="--h:60%"></div>
+<div class="bar" style="--h:80%"></div>
+<div class="bar" style="--h:95%"></div>
+
+</div>
+
+<p class="chart-label">Regional Sales Performance</p>
+
+</div>
+
+<!-- RIGHT -->
+<div class="bi-text">
+
+<h2 id="biTitle">Advanced Data Visualization</h2>
+
+<p id="biDesc">
+Power BI transforms raw business data into powerful interactive dashboards and reports that help organizations monitor performance and uncover insights in real time.</p>
+
+<div class="bi-buttons">
+
+<button  class="app-btn active" onclick="changeBiText(0)">Advanced Data Visualization</button>
+<button onclick="changeBiText(1)">Enterprise Data Integration</button>
+<button onclick="changeBiText(2)">AI-Driven Analytics</button>
+<button onclick="changeBiText(3)">Secure Intelligence Sharing</button>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!--powerapps-->
+<section class="powerapps-section" id="powerapps">
+
+<div class="apps-intro">
+<h2>Build Intelligent Business Apps</h2>
+<p>
+Create powerful applications with Power Apps. Automate workflows,
+connect enterprise data, and empower teams with modern tools.
+</p>
+</div>
+<div class="apps-container">
+
+<!-- LEFT  -->
+<div class="apps-text">
+<h2 id="appsTitle">Advanced App Insights</h2>
+
+<p id="appsDesc">
+Gain deeper visibility into application performance and user activity to improve operational efficiency.
+</p>
+<div class="apps-buttons">
+<button onclick="changeText(0)">Advanced App Insights</button>
+<button onclick="changeText(1)">Enterprise Integration</button>
+<button onclick="changeText(2)">AI Automation</button>
+<button onclick="changeText(3)">Secure Collaboration</button>
+</div>
+</div>
+
+<!--RIGHT-->
+<div class="app-builder">
+<h3 class="studio-title">Power Apps Builder</h3>
+<div class="form-area">
+  <label>Employee Name</label>
+    <input id="nameField" type="text">
+  <label>Department</label>
+    <input id="deptField" type="text">
+  <label>Role</label>
+    <input id="roleField" type="text">
+  <button id="submitBtn">Create Record</button>
+</div>
+
+<div class="status" id="statusText"></div>
+<div class="dashboard" id="dashboard">
+<h4>Employee Dashboard</h4>
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Department</th>
+    <th>Role</th>
+  </tr>
+</thead>
+<tbody id="tableData"></tbody>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!--pva-->
+<section class="pva-section" id="pva">
+<div class="apps-intro">
+<h2>Build Intelligent AI Chatbots</h2>
+<p>
+Create powerful conversational AI with Power Virtual Agents.
+Automate customer support, streamline processes, and deliver
+smarter experiences with enterprise-grade chatbots.
+</p>
+</div>
+
+<div class="pva-container">
+
+<!-- LEFT -->
+<div class="pva-chatbox">
+
+<div class="chat-window">
+
+<div class="chat-header">
+AI Virtual Assistant
+</div>
+
+<div class="chat-messages">
+
+<div class="msg user">Hello, I need help tracking my recent order.</div>
+
+<div class="typing">
+<span></span><span></span><span></span>
+</div>
+
+<div class="msg bot">Sure. Let me check the latest update for your order.</div>
+
+<div class="msg bot">Your order has been shipped and will arrive tomorrow.</div>
+
+<div class="msg bot">You will receive a confirmation email shortly.</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT  -->
+
+<div class="pva-text">
+
+<h2 id="pvaTitle">Intelligent AI Chatbots</h2>
+
+<p id="pvaDesc">
+Power Virtual Agents enables organizations to build intelligent AI-powered chatbots that automatically resolve customer queries and improve support experiences.
+</p>
+
+<div class="pva-buttons">
+
+<button onclick="changePvaText(1)">Intelligent AI Chatbots</button>
+<button onclick="changePvaText(2)">Automated Conversations</button>
+<button onclick="changePvaText(3)">Integrated Business Assistance</button>
+<button onclick="changePvaText(4)">Enterprise Grade Security</button>
+
+</div>
+
+</div>
+</section>
+
+<!--powerauto-->
+<section class="powerauto-section" id="powerauto">
+<div class="apps-intro">
+<h2>Automate Intelligent Workflows</h2>
+<p>
+Streamline business operations with Power Automate. Connect services,
+automate repetitive tasks, and create intelligent workflows that save
+time and improve productivity across your organization.
+</p>
+</div>
+<div class="powerauto-container">
+
+<!-- LEFT -->
+<div class="auto-text">
+
+<h2 id="autoTitle">Automate Business Workflows</h2>
+
+<p id="autoDesc">
+Power Automate processes incoming emails and triggers automated workflows.
+</p>
+
+<div class="auto-buttons">
+
+<button onclick="changeAutoText(0)">Automate Business Workflows</button>
+<button onclick="changeAutoText(1)">Intelligent Email Processing</button>
+<button onclick="changeAutoText(2)">Seamless System Integration</button>
+<button onclick="changeAutoText(3)">Automated Team Notifications</button>
+
+</div>
+</div>
+<!-- RIGHT -->
+
+<div class="automation-ui">
+
+<!-- EMAIL-->
+
+<div class="app-window email-window">
+<div class="app-header">Outlook</div>
+
+<div class="email-item">
+<div class="email-subject">Invoice Request</div>
+<div class="email-from">client@company.com</div>
+</div>
+
+</div>
+
+<!-- EXCEL -->
+
+<div class="app-window excel-window">
+
+<div class="app-header">Excel</div>
+
+<div class="excel-row">
+<span>Client</span>
+<span>Invoice</span>
+<span>Status</span>
+</div>
+
+<div class="excel-row fill">
+<span>Client Co.</span>
+<span>$1200</span>
+<span>Processed</span>
+</div>
+
+</div>
+
+<!-- TEAMS -->
+
+<div class="teams-popup">
+New notification sent to Finance Team
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!--FOOTER-->
+<footer class="footer">
+  <div class="footer-top">
+    <h2>Let's Connect</h2>
+    <p>Start your digital transformation journey with Nirka Business Solutions and discover what's possible for your business.</p>
+    <a href="/contact-us" class="footer-cta">Contact Us</a>
+  </div>
+  <div class="footer-main">
+    <div class="footer-col"><p>Empowering businesses through Microsoft Business Applications and modern IT solutions.</p></div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about-us">About Us</a><a href="/why-us">Why NIRKA?</a><a href="/careers">Careers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="/contact-us">Contact Us</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <a href="https://www.google.com/maps/search/?api=1&query=Vadodara,Gujarat,India" class="contact-item"><img src="images/location.png" alt="Location"><span>Vadodara, Gujarat, India</span></a>
+      <a href="mailto:sales@infinixotech.com" class="contact-item"><img src="images/mail (2).png" alt="Email"><span>sales@infinixotech.com</span></a>
+      <a href="tel:+919428084866" class="contact-item"><img src="images/phone-receiver-silhouette (1).png" alt="Phone"><span>+91 94280 84866</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&#169; 2026 Nirka Business Solutions. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/company/nirka/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/USERNAME" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!--popup-->
+<div id="demoFormPopup" class="popup-form">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Get In Touch</h2>
+    <form id="demoForm" method="POST">
+      <input type="text" name="firstname" placeholder="Your Name" required>
+      <input type="text" name="lastname" placeholder="Last Name">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="organization" placeholder="Company Name">
+      <textarea name="question" placeholder="Your Message / Requirements" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="demoFormMsg"></p>
+  </div>
+</div>
+
+<script src="js/service.js"></script>
+<script src="js/power.js"></script>
+<script src="js/popup.js"></script>
+</body>

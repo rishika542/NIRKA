@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nirka Business Solutions</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-brands, .fa-regular {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-weight: 900 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p, a, span, li, input, textarea, button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #f8faff;
+}
+
+/*HERO*/
+.apply-hero{
+  text-align:center;
+  margin:50px auto 20px;
+}
+.apply-hero h1{
+  font-size:42px;
+  background: #322e85;
+  -webkit-background-clip:text;
+  color:transparent;
+  margin-bottom:10px;
+}
+.apply-hero p{
+  font-size:16px;
+  color:#374151;
+  line-height:1.6;
+}
+
+/*  FORM CARD  */
+.form-wrapper{
+  max-width:800px;
+  margin:30px auto 80px;
+  background: #ffffffbd;
+  border-radius:16px;
+  padding:40px 30px;
+  box-shadow:0 25px 70px rgba(0,0,0,0.12);
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin: 0;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  outline:none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color:#322e85;
+  box-shadow:0 0 6px rgba(50,46,133,0.3);
+}
+
+.form-field textarea {
+  resize: none;
+  min-height:100px;
+}
+
+form button {
+  padding:12px 25px;
+  border:none;
+  background:#322e85;
+  color:#fff;
+  font-weight:600;
+  border-radius:25px;
+  cursor:pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+  background:linear-gradient(90deg,#4f46e5,#9333ea,#f43f5e);
+  transform:translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .row {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!--  HEADER -->
+<header class="header-wrapper">
+
+  <div class="top-header">
+    <div class="top-left">
+      <div class="left-item"><img src="images/Dynamics_365_Business_Central_logo.svg.webp" alt="Microsoft"><span>Microsoft Dynamics 365</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/microsoft (2).png" alt="Microsoft"><span>Microsoft Partner</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/world.png" alt="India"><span>India</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/united-arab-emirates.png" alt="UAE"><span>UAE</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/united-states.png" alt="USA"><span>USA</span></div>
+    </div>
+    <div class="top-right">
+      <a href="mailto:sales@infinixotech.com">
+        <svg class="email-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6H20C21.1 6 22 6.9 22 8V16C22 17.1 21.1 18 20 18H4C2.9 18 2 17.1 2 16V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="2"/>
+          <path d="M22 8L12 13L2 8" stroke="white" stroke-width="2"/>
+        </svg>
+        sales@infinixotech.com
+      </a>
+      <span>|</span>
+      <a href="tel:+919428084866">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6.62 10.79C8.06 13.66 10.34 15.94 13.21 17.38L15.41 15.18C15.79 14.8 16.36 14.68 16.84 14.88C18.27 15.43 19.84 15.7 21.5 15.7C22.33 15.7 23 16.37 23 17.2V21.5C23 22.33 22.33 23 21.5 23C10.95 23 2 14.05 2 3.5C2 2.67 2.67 2 3.5 2H7.8C8.63 2 9.3 2.67 9.3 3.5C9.3 5.16 9.57 6.73 10.12 8.16C10.32 8.64 10.2 9.21 9.82 9.59L7.62 11.79Z" stroke="white" stroke-width="2"/>
+        </svg>
+        +91 94280 84866
+      </a>
+    </div>
+  </div>
+
+<!-- NAVBAR  -->
+
+<div class="navbar">
+  <div class="logo-section">
+    <a href="/"><img src="images/nirka_FINAL-removebg-preview.webp" alt="NIRKA Logo"></a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about-us">About Us</a>
+
+     <!-- SERVICES DROPDOWN -->
+    <div class="nav-dropdown">
+      <a  class="nav-drop-trigger">
+        Services
+       
+      </a>
+
+      <div class="dropdown-menu">
+        <div class="dropdown-inner">
+        <!-- Microsoft Dynamics 365 -->
+          <div class="drop-col">
+            <div class="drop-col-title">Microsoft Dynamics 365</div>
+            <a href="/business-central" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">Dynamics 365</div>
+                <div class="drop-item-sub">Finance & Accounting</div>
+                <div class="drop-item-sub">Supply Chain </div>
+                <div class="drop-item-sub">Sales & Service</div>
+                <div class="drop-item-sub">Project Management </div>
+              </div>
+            </a>
+            <a href="/crm" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">D 365 Sales(CRM)</div>
+               <div class="drop-item-sub">Sales Automation</div>
+               <div class="drop-item-sub">Marketing </div>
+               <div class="drop-item-sub">Customer Service</div>
+               <div class="drop-item-sub">AI insights </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="drop-divider"></div>
+
+          <!-- Power Platform -->
+          <div class="drop-col">
+            <div class="drop-col-title">Microsoft Power Platform</div>
+            <a href="/power-platform" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">Power Platform</div>
+                <div class="drop-item-sub">Power BI</div>
+                <div class="drop-item-sub">Power Apps</div>
+                <div class="drop-item-sub">Power Virtual Agents</div>
+                <div class="drop-item-sub">Power Automate </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="drop-divider"></div>
+
+          <!--  Web & App Dev -->
+          <div class="drop-col">
+            <div class="drop-col-title">Development</div>
+            <a href="/web-app-development" class="drop-item">
+              
+              <div>
+                <div class="drop-item-title">Web & App Development</div>
+                <div class="drop-item-sub">Web Development</div>
+                <div class="drop-item-sub">App Development</div>
+                <div class="drop-item-sub">E-commerce</div>
+                <div class="drop-item-sub">MS integration</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM CTA BAR -->
+        <div class="drop-footer">
+          <span>Ready to transform your business?</span>
+          <a href="/contact-us" class="drop-cta">Talk to an Expert →</a>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="/careers">Career At NIRKA</a>
+    <a href="/why-us">Why NIRKA?</a>
+   <a href="/contact-us" class="nav-btn">Contact Us</a>
+  </nav>
+</div>
+
+
+<!--MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-menu" onclick="toggleMenu()">← Back</div>
+  <a href="/" class="mobile-link">Home</a>
+  <a href="/about-us" class="mobile-link">About Us</a>
+
+  <!-- Mobile Services Accordion -->
+  <div class="mobile-accordion">
+    <div class="mobile-acc-trigger" onclick="toggleMobileAcc(this)">
+      Services
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+        <path d="M6 9L12 15L18 9" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="mobile-acc-body">
+      <div class="mobile-acc-section">Microsoft Dynamics 365</div>
+      <a href="/business-central" class="mobile-link sub">Business Central 365</a>
+      <a href="/crm" class="mobile-link sub">Dynamics 365 Sales(CRM)</a>
+      <div class="mobile-acc-section">Power Platform</div>
+      <a href="/power-platform" class="mobile-link sub">Power Platform</a>
+      <div class="mobile-acc-section">Development</div>
+      <a href="/web-app-development" class="mobile-link sub">Web & App Development</a>
+    </div>
+  </div>
+
+  <a href="/careers" class="mobile-link">Career At NIRKA</a>
+  <a href="/why-us" class="mobile-link">Why NIRKA?</a>
+  <a href="/contact-us" class="mobile-link">Contact Us</a>
+</div>
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+</header>
+
+<!-- Floating Contact Buttons -->
+<div class="contact-widget">
+  <a href="mailto:sales@infinixotech.com" class="contact-btn email" title="Email Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M4 6H20C21.1 6 22 6.9 22 8V16C22 17.1 21.1 18 20 18H4C2.9 18 2 17.1 2 16V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="2"/>
+      <path d="M22 8L12 13L2 8" stroke="white" stroke-width="2"/>
+    </svg>
+  </a>
+  <a href="tel:+919428084866" class="contact-btn call" title="Call Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M6.62 10.79C8.06 13.66 10.34 15.94 13.21 17.38L15.41 15.18C15.79 14.8 16.36 14.68 16.84 14.88C18.27 15.43 19.84 15.7 21.5 15.7C22.33 15.7 23 16.37 23 17.2V21.5C23 22.33 22.33 23 21.5 23C10.95 23 2 14.05 2 3.5C2 2.67 2.67 2 3.5 2H7.8C8.63 2 9.3 2.67 9.3 3.5C9.3 5.16 9.57 6.73 10.12 8.16C10.32 8.64 10.2 9.21 9.82 9.59L7.62 11.79Z" stroke="white" stroke-width="2"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/919428084866" class="contact-btn whatsapp" title="Chat on WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24">
+      <path fill="white" d="M12.04 2C6.53 2 2 6.48 2 12c0 1.93.57 3.72 1.55 5.23L2 22l4.92-1.51A9.95 9.95 0 0 0 12.04 22C17.55 22 22 17.52 22 12S17.55 2 12.04 2zm5.67 14.27c-.24.67-1.4 1.29-1.93 1.36-.5.07-1.13.1-1.83-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.16-4.95-4.36-.15-.2-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1-2.41.26-.29.58-.36.77-.36h.56c.18 0 .42-.07.66.5.24.58.83 2.01.9 2.15.07.14.12.3.02.48-.1.18-.15.29-.29.45-.14.16-.3.35-.43.47-.14.14-.28.3-.12.58.16.29.7 1.15 1.51 1.86 1.04.93 1.92 1.22 2.2 1.36.28.14.45.12.61-.07.16-.18.71-.83.9-1.11.18-.29.36-.24.61-.14.24.1 1.55.73 1.82.86.27.14.45.2.52.31.07.11.07.67-.17 1.34z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- HERO -->
+<section class="apply-hero fade">
+  <h1>Apply for Position</h1>
+  <p>Fill out the form below and our recruitment team will reach out to you shortly.</p>
+</section>
+
+<!-- FORM  -->
+<div class="form-wrapper fade">
+<form id="applyForm" method="POST" enctype="multipart/form-data">
+
+  <div class="row">
+    <div class="form-field">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+    </div>
+    <div class="form-field">
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+    </div>
+  </div>
+
+  <div class="form-field">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+  </div>
+
+  <div class="form-field">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email Address" required>
+  </div>
+
+  <div class="form-field">
+    <label for="country">Country</label>
+    <select id="country"  name="country" required>
+      <option value="">Select your country</option>
+  <option value="India">India</option>
+  <option value="USA">United States</option>
+  <option value="UK">United Kingdom</option>
+  <option value="Canada">Canada</option>
+  <option value="Australia">Australia</option>
+  <option value="UAE">United Arab Emirates</option>
+  <option value="Germany">Germany</option>
+  <option value="France">France</option>
+  <option value="Italy">Italy</option>
+  <option value="Spain">Spain</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Mexico">Mexico</option>
+  <option value="China">China</option>
+  <option value="Japan">Japan</option>
+  <option value="South Korea">South Korea</option>
+  <option value="Russia">Russia</option>
+  <option value="Saudi Arabia">Saudi Arabia</option>
+  <option value="South Africa">South Africa</option>
+  <option value="Egypt">Egypt</option>
+  <option value="Turkey">Turkey</option>
+  <option value="Sweden">Sweden</option>
+  <option value="Norway">Norway</option>
+  <option value="Netherlands">Netherlands</option>
+  <option value="Switzerland">Switzerland</option>
+  <option value="Belgium">Belgium</option>
+  <option value="Thailand">Thailand</option>
+  <option value="Singapore">Singapore</option>
+  <option value="Malaysia">Malaysia</option>
+  <option value="Indonesia">Indonesia</option>
+  <option value="Philippines">Philippines</option>
+  <option value="Vietnam">Vietnam</option>
+  <option value="Pakistan">Pakistan</option>
+  <option value="Bangladesh">Bangladesh</option>
+  <option value="Nepal">Nepal</option>
+  <option value="Sri Lanka">Sri Lanka</option>
+  <option value="Morocco">Morocco</option>
+  <option value="Kenya">Kenya</option>
+  <option value="Nigeria">Nigeria</option>
+  <option value="Argentina">Argentina</option>
+  <option value="Chile">Chile</option>
+  <option value="Colombia">Colombia</option>
+  <option value="Peru">Peru</option>
+  <option value="New Zealand">New Zealand</option>
+  <option value="Ireland">Ireland</option>
+  <option value="Poland">Poland</option>
+  <option value="Greece">Greece</option>
+  <option value="Portugal">Portugal</option>
+  <option value="Czech Republic">Czech Republic</option>
+  <option value="Hungary">Hungary</option>
+    </select>
+  </div>
+  <div class="form-field">
+  <label for="position">Position</label>
+  <select id="position" name="position" required>
+    <option value="">Select Position</option>
+    <option value="Microsoft Dynamics 365 Business Central Technical Consultant"> Microsoft Dynamics 365 Business Central Technical Consultant</option>
+    <option value="Microsoft Dynamics 365 Business Central Technical Consultant (Internship)"> Microsoft Dynamics 365 Business Central Technical Consultant (Internship)</option>
+    <option value="Microsoft Dynamics 365 Business Central Functional Consultant">Microsoft Dynamics 365 Business Central Functional Consultant</option>
+    <option value="Microsoft Dynamics 365 Business Central Functional Consultant (Internship)">Microsoft Dynamics 365 Business Central Functional Consultant (Internship)</option>
+    <option value=" Business Development Executive"> Business Development Executive</option>
+    <option value="Business Development Executive (Internship)">Business Development Executive (Internship)</option>
+    <option value="Sales Executive">Sales Executive</option>
+    <option value="Sales Executive (Internship)">Sales Executive (Internship)</option>
+    <option value=" App Developer"> App Developer</option>
+    <option value="App Developer (Internship)">App Developer (Internship)</option>
+
+    <option value="Other">Other</option>
+  </select>
+</div>
+  <div class="form-field">
+    <label for="company">Current Company</label>
+    <input type="text" id="company" name="company" placeholder="Company Name">
+  </div>
+
+  <div class="form-field">
+    <label for="experience">Experience (Years)</label>
+    <input type="number" id="experience" name="experience" placeholder="Years of Experience">
+  </div>
+
+  <div class="form-field">
+    <label for="question">Message / Questions</label>
+    <textarea id="question" name="question" placeholder="Your Message or Questions" required></textarea>
+  </div>
+
+  <div class="form-field">
+  <label for="resume">Upload Resume (PDF / DOC / DOCX)</label>
+  <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+</div>
+
+  <button type="submit">Submit Application</button>
+</form>
+<div id="formMessage" style="margin-top:15px;font-weight:600;"></div>
+</div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <h2>Let's Connect</h2>
+    <p>Start your digital transformation journey with Nirka Business Solutions and discover what's possible for your business.</p>
+    <a href="/contact-us" class="footer-cta">Contact Us</a>
+  </div>
+  <div class="footer-main">
+    <div class="footer-col"><p>Empowering businesses through Microsoft Business Applications and modern IT solutions.</p></div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about-us">About Us</a><a href="/why-us">Why NIRKA?</a><a href="/careers">Careers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="/contact-us">Contact Us</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <a href="https://www.google.com/maps/search/?api=1&query=Vadodara,Gujarat,India" class="contact-item"><img src="images/location.png" alt="Location"><span>Vadodara, Gujarat, India</span></a>
+      <a href="mailto:sales@infinixotech.com" class="contact-item"><img src="images/mail (2).png" alt="Email"><span>sales@infinixotech.com</span></a>
+      <a href="tel:+919428084866" class="contact-item"><img src="images/phone-receiver-silhouette (1).png" alt="Phone"><span>+91 94280 84866</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&#169; 2026 Nirka Business Solutions. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/company/nirka/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/USERNAME" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div id="demoFormPopup" class="popup-form">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Get In Touch</h2>
+    <form id="demoForm" method="POST">
+      <input type="text" name="firstname" placeholder="Your Name" required>
+      <input type="text" name="lastname" placeholder="Last Name">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="organization" placeholder="Company Name">
+      <textarea name="question" placeholder="Your Message / Requirements" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="demoFormMsg"></p>
+  </div>
+</div>
+
+<script>
+
+document.getElementById("applyForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let form = this;
+    let messageDiv = document.getElementById("formMessage");
+    messageDiv.innerHTML = "Sending...";
+    messageDiv.style.color = "black";
+
+    let formData = new FormData(form);
+
+    fetch("/php/send-application.php", {
+        method: "POST",
+        body: formData
+    })
+    
+    .then(response => response.text())
+   
+.then(data => {
+    console.log("SERVER RESPONSE:", data); // 👈 ADD THIS
+
+    if(data.includes("success")){
+        messageDiv.style.color = "green";
+        messageDiv.innerHTML = "Application submitted successfully!";
+        form.reset();
+    } else {
+        messageDiv.style.color = "red";
+        messageDiv.innerHTML = data; // 👈 REAL ERROR DIKHEGA
+    }
+})
+    .catch(error => {
+        messageDiv.style.color = "red";
+        messageDiv.innerHTML = "Server Error!";
+    });
+});
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('menuOverlay');
+
+  if (menu.classList.contains('open')) {
+    menu.classList.remove('open');
+    overlay.style.display = 'none';
+  } else {
+    menu.classList.add('open');
+    overlay.style.display = 'block';
+  }
+}
+
+/* Auto close on ANY link click (even Home) */
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    toggleMenu();
+  });
+});
+
+// MOBILE ACCORDION
+function toggleMobileAcc(trigger) {
+  const body = trigger.nextElementSibling;
+
+  if (!body) return;
+
+  const isOpen = body.classList.contains("open");
+
+  if (isOpen) {
+    body.classList.remove("open");
+    trigger.classList.remove("open");
+  } else {
+    body.classList.add("open");
+    trigger.classList.add("open");
+  }
+}
+// Mobile accordion — Services expand/collapse
+function toggleMobileAcc(trigger) {
+  const body = trigger.nextElementSibling;
+  const isOpen = body.classList.toggle("open");
+  trigger.classList.toggle("open", isOpen);
+}
+</script>
+
+<script src="js/popup.js"></script>
+</body>
+</html>

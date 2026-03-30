@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-brands, .fa-regular {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-weight: 900 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p, a, span, li, input, textarea, button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+}
+
+.hero1 {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px; 
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+}
+
+.hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.7);
+    z-index: 0;
+}
+
+.hero1-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero1-bg-img {
+    position: absolute;
+    width: 50%;       
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px) brightness(0.7);
+}
+
+/* Left image */
+.hero1-bg-left {
+    left: 0;
+    background-image: url('../images/c1.jpeg');
+
+}
+
+/* Right image */
+.hero1-bg-right {
+    right: 0;
+    background-image: url('../images/c2.jpeg');
+}
+
+/* Content above images */
+.hero1-content {
+    position: relative;
+    z-index: 1;
+    padding: 60px 20px; 
+}
+.hero1-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero1 h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero1-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ffffff;
+    color: #0a1f44;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero1-btn:hover {
+      background: linear-gradient(90deg,#4f46e5,#9333ea,#f43f5e);
+    color: #fff;
+}
+
+
+/* ================= SECTION COMMON ================= */
+.services {
+     padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #24243e;
+    font-weight: 700;
+}
+.services-box p {
+    text-align: justify;
+}
+.services-box {
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* ================= CARD GRID ================= */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    
+}
+
+.card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+    height: 200px;
+    transition: background 0.3s ease;
+}
+
+/* Hide description initially */
+.card-desc {
+    display: none;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Hover effect */
+.card:hover {
+    background: #d3d4d6;
+}
+
+.card:hover .card-title {
+    display: none; 
+}
+
+.card:hover .card-desc {
+    display: block; 
+}
+
+/* Card title */
+.card-title {
+    font-size: 18px;
+    color: #0a1f44;
+    margin-bottom: 15px;
+}
+
+/* Apply button */
+.services-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.services-btn:hover {
+    background: linear-gradient(90deg,#4f46e5,#9333ea,#f43f5e);
+}
+
+/* ================= INTERNSHIP BADGE ================= */
+.card h3::after {
+    content: "";
+}
+
+.card h3:contains("Internship") {
+    color: #0077ff;
+}
+
+.card h3 {
+    position: relative;
+}
+
+.card h3::before {
+    content: attr(data-badge);
+}
+
+
+/* ================= CTA SECTION ================= */
+.cta {
+    color: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 60px 20px;
+    text-align: center;
+
+}
+
+.cta-content {
+    
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.cta p {
+    margin-top: 0px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+
+.join-btn {
+    display: inline-block;
+    padding: 12px 28px;
+      background: linear-gradient(90deg,#4f46e5,#9333ea,#f43f5e);
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.positions h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #24243e;
+    font-weight: 600;
+}
+
+/* ================= ACCORDION ================= */
+.accordion {
+    max-width: 950px;
+    margin: auto;
+}
+
+.accordion-item {
+    background: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.accordion-item:hover {
+    transform: translateY(-3px);
+}
+
+/* Button */
+.accordion-btn {
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    background: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+    transition: 0.3s;
+}
+
+.accordion-btn:hover {
+    background: #f1f5ff;
+    color: #0a1f44;
+}
+
+/* Arrow */
+.arrow {
+    transition: transform 0.3s ease;
+    font-size: 14px;
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(90deg);
+}
+
+/* Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 25px;
+    background: #fafafa;
+}
+
+.accordion-item.active .accordion-content {
+    padding: 20px 25px 30px;
+    max-height: 500px;
+}
+
+/* Requirements */
+.accordion-content h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.accordion-content ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.accordion-content ul li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Apply Button */
+.apply-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background:  linear-gradient(90deg,#4f46e5,#9333ea,#f43f5e);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    background:  linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+/* ===== TABLET (769px – 1024px) ===== */
+@media (max-width: 1024px) {
+
+  /* HERO */
+  .hero1 { padding: 80px 24px; min-height: 420px; }
+  .hero1 h1 { font-size: 34px; }
+  .hero1 p  { font-size: 16px; }
+  .hero1-content { padding: 40px 20px; }
+
+  /* SERVICES */
+  .services { padding: 50px 24px; }
+  .services h2 { font-size: 28px; }
+  .services-box { font-size: 15px; }
+
+  /* CARD GRID */
+  .card-container { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .card { height: auto; padding: 26px 18px; }
+  .card-title { font-size: 16px; }
+
+  /* POSITIONS */
+  .positions { margin: 50px auto; padding: 0 24px; }
+  .positions h2 { font-size: 26px; }
+
+  /* ACCORDION */
+  .accordion { max-width: 100%; }
+  .accordion-btn { font-size: 16px; padding: 16px 20px; }
+  .accordion-content { padding: 0 20px; }
+  .accordion-item.active .accordion-content { padding: 18px 20px 26px; }
+
+  /* CTA */
+  .cta { padding: 50px 24px; }
+}
+
+/* ===== MOBILE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero1 { padding: 60px 16px; min-height: 380px; }
+  .hero1 h1 { font-size: 24px; line-height: 1.3; margin-bottom: 14px; }
+  .hero1 p  { font-size: 14.5px; line-height: 1.6; margin-bottom: 22px; }
+  .hero1-content { padding: 30px 16px; max-width: 100%; }
+  .hero1-btn { padding: 10px 22px; font-size: 14px; }
+
+  /* SERVICES */
+  .services { padding: 40px 16px; }
+  .services h2 { font-size: 22px; margin-bottom: 24px; }
+  .services-box { font-size: 14px; line-height: 1.7; max-width: 100%; }
+
+  /* CARD GRID */
+  .card-container { grid-template-columns: 1fr; gap: 16px; }
+  .card { height: auto; padding: 22px 16px; border-radius: 10px; }
+  .card-title { font-size: 16px; margin-bottom: 10px; }
+  .card-desc { font-size: 13.5px; }
+  .services-btn { padding: 9px 18px; font-size: 13px; }
+
+  /* POSITIONS */
+  .positions { margin: 36px auto; padding: 0 16px; }
+  .positions h2 { font-size: 22px; margin-bottom: 20px; }
+
+  /* ACCORDION */
+  .accordion { max-width: 100%; }
+  .accordion-item { margin-bottom: 14px; border-radius: 9px; }
+  .accordion-btn { font-size: 14.5px; padding: 14px 16px; }
+  .accordion-content { padding: 0 16px; }
+  .accordion-item.active .accordion-content {
+    padding: 16px 16px 22px;
+    max-height: 600px;
+  }
+  .accordion-content h4 { font-size: 14px; margin-top: 12px; margin-bottom: 8px; }
+  .accordion-content ul li { font-size: 13.5px; margin-bottom: 6px; }
+  .accordion-content p { font-size: 13.5px; line-height: 1.6; }
+  .apply-btn { padding: 9px 18px; font-size: 13px; }
+
+  /* CTA */
+  .cta { padding: 40px 16px; }
+  .cta-content { max-width: 100%; }
+  .cta p { font-size: 14.5px; line-height: 1.7; }
+  .join-btn { padding: 10px 22px; font-size: 14px; }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+
+  /* HERO */
+  .hero1 { padding: 50px 14px; min-height: 340px; }
+  .hero1 h1 { font-size: 20px; }
+  .hero1 p  { font-size: 13.5px; }
+  .hero1-btn { padding: 9px 20px; font-size: 13px; }
+
+  /* SERVICES */
+  .services { padding: 32px 14px; }
+  .services h2 { font-size: 20px; }
+  .services-box { font-size: 13.5px; }
+
+  /* CARD */
+  .card { padding: 18px 14px; border-radius: 9px; }
+  .card-title { font-size: 15px; }
+  .card-desc  { font-size: 13px; }
+
+  /* POSITIONS */
+  .positions { padding: 0 14px; }
+  .positions h2 { font-size: 20px; }
+
+  /* ACCORDION */
+  .accordion-btn { font-size: 13.5px; padding: 12px 14px; }
+  .accordion-content h4 { font-size: 13px; }
+  .accordion-content ul li { font-size: 13px; }
+  .apply-btn { padding: 8px 16px; font-size: 12.5px; }
+
+  /* CTA */
+  .cta { padding: 32px 14px; }
+  .cta p { font-size: 13.5px; }
+  .join-btn { padding: 9px 20px; font-size: 13px; }
+}
+
+/* ===== EXTRA SMALL (max-width: 380px) ===== */
+@media (max-width: 380px) {
+
+  .hero1 { padding: 40px 12px; }
+  .hero1 h1 { font-size: 18px; }
+  .hero1 p  { font-size: 13px; }
+
+  .services h2,
+  .positions h2 { font-size: 18px; }
+
+  .accordion-btn { font-size: 13px; padding: 11px 12px; }
+  .card-title    { font-size: 14px; }
+  .card          { padding: 16px 12px; }
+}

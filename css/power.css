@@ -1,0 +1,1073 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-brands, .fa-regular {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-weight: 900 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p, a, span, li, input, textarea, button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+}
+header h1,
+header h2,
+header h3,
+header p,
+footer p,
+footer a{
+font-size:inherit !important;
+}
+.service-hero{
+   background: linear-gradient(135deg, #003d4d62, #007a6e, #00b894, #00cec962);
+color:white;
+
+}
+.logo-3d img {
+ transform: scale(1.1);   
+}
+
+.powerbi-intro h2{
+font-size:40px;
+font-weight:700;
+margin-bottom:14px;
+  background: linear-gradient(135deg, #003d4d62, #007a6e, #00b894, #00cec962);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.powerbi-intro p{
+font-size:17px;
+color:#475569;
+line-height:1.6;
+}
+.powerbi-section{
+padding:70px 10%;
+background: #f8faff;
+color:#1f2937;
+}
+
+.powerbi-container{
+display:flex;
+align-items:center;
+gap:70px;
+}
+
+/* LEFT DASHBOARD */
+.bi-dashboard{
+width:50%;
+background:#f8faff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,120,212,0.2);
+}
+
+.kpi{
+margin-bottom:30px;
+}
+
+.kpi h3{
+font-size:16px;
+color:#1f2937;
+}
+
+.kpi p{
+font-size:42px;
+color:#1f2937;
+font-weight:bold;
+}
+.chart-area{
+display:flex;
+align-items:flex-end;
+gap:18px;
+height:180px;
+margin-top:20px;
+border-bottom:2px solid #cbd5f5; 
+padding-bottom:5px;
+max-width: 60%; 
+}
+
+.bar{
+width:45px;
+background: linear-gradient(135deg, #003e4de5, #007a6e, #00b894);
+height:0;
+border-radius:6px 6px 0 0;
+}
+
+/* animation start after scroll */
+
+.bar.animate:nth-child(1){animation:grow1 2s .1s forwards;}
+.bar.animate:nth-child(2){animation:grow2 2s .2s forwards;}
+.bar.animate:nth-child(3){animation:grow3 2s .3s forwards;}
+.bar.animate:nth-child(4){animation:grow4 2s .4s forwards;}
+.bar.animate:nth-child(5){animation:grow5 2s .5s forwards;}
+
+@keyframes grow1{to{height:70%;}}
+@keyframes grow2{to{height:90%;}}
+@keyframes grow3{to{height:60%;}}
+@keyframes grow4{to{height:80%;}}
+@keyframes grow5{to{height:95%;}}
+
+.chart-label{
+margin-top:20px;
+color:#94a3b8;
+font-size:14px;
+}
+
+/* RIGHT TEXT */
+
+.bi-text{
+width:50%;
+}
+
+.bi-text h2{
+font-size:26px;
+margin-bottom:20px;
+}
+
+.bi-text p{
+line-height:1.7;
+color:#24243e;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.bi-buttons{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.bi-buttons button{
+background:transparent;
+border:1px solid #334155;
+color:#24243e;
+padding:12px;
+text-align:left;
+cursor:pointer;
+transition:.3s;
+}
+
+.bi-buttons button:hover{
+border-color:linear-gradient(90deg, #4f46e5, #9333ea, #f43f5e);
+transform:translateX(6px);
+}
+
+
+.apps-intro{
+text-align:center;
+max-width:700px;
+margin:0 auto 80px;
+}
+
+.apps-intro h2{
+font-size:40px;
+font-weight:700;
+margin-bottom:14px;
+  background: linear-gradient(135deg, #003e4de5, #007a6e, #00b894);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.apps-intro p{
+font-size:17px;
+color:#475569;
+line-height:1.6;
+}
+
+
+.powerapps-section{
+padding:70px 10%;
+background: #f8faff;
+color:#1f2937;
+}
+
+
+.apps-container{
+display:flex;
+align-items:center;
+gap:70px;
+}
+/* RIGHT TEXT */
+
+.apps-text{
+width:50%;
+}
+
+.apps-text h2{
+font-size:26px;
+margin-bottom:20px;
+}
+
+.apps-text p{
+line-height:1.7;
+color:#24243e;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.apps-buttons{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.apps-buttons button{
+background:transparent;
+border:1px solid #334155;
+color:#24243e;
+padding:12px;
+text-align:left;
+cursor:pointer;
+transition:.3s;
+}
+
+.apps-buttons button:hover{
+border-color:linear-gradient(90deg, #4f46e5, #9333ea, #f43f5e);
+transform:translateX(6px);
+}
+
+
+/* RIGHT SIDE */
+
+.app-builder{
+width:50%;
+background:white;
+padding:40px;
+border-radius:16px;
+box-shadow:0 20px 60px rgba(0,0,0,0.1);
+
+}
+
+.form-area{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.form-area input{
+padding:10px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+#submitBtn{
+margin-top:10px;
+padding:10px;
+ background: linear-gradient(135deg, #003e4de5, #007a6e, #00b894);
+border:none;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.status{
+margin-top:15px;
+font-weight:600;
+color:#16a34a;
+}
+
+.dashboard{
+margin-top:20px;
+display:none;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #e2e8f0;
+text-align:left;
+}
+
+
+
+.pva-intro{
+text-align:center;
+max-width:700px;
+margin:0 auto 80px;
+}
+
+.pva h2{
+font-size:40px;
+font-weight:700;
+margin-bottom:14px;
+background:linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.pva-intro p{
+font-size:17px;
+color:#475569;
+line-height:1.6;
+}
+.pva-section{
+padding:70px 10%;
+background: #f8faff;
+color:#1f2937;
+}
+
+.pva-container{
+display:flex;
+align-items:center;
+gap:70px;
+}
+
+/* Left CHATBOT */
+.pva-chatbox{
+width:50%;
+display:flex;
+justify-content:center;
+}
+
+/* CHAT WINDOW */
+
+.chat-window{
+
+width:420px;
+background:white;
+border-radius:18px;
+box-shadow:0 0 40px linear-gradient(135deg, #003e4de5, #007a6e, #00b894);
+padding:25px;
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+.chat-window.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* HEADER */
+
+.chat-header{
+font-weight:600;
+margin-bottom:20px;
+color:#1f2937;
+font-size:15px;
+}
+
+/* MESSAGES */
+
+.chat-messages{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+/* CHAT BUBBLES */
+
+.msg{
+padding:12px 16px;
+border-radius:12px;
+max-width:85%;
+font-size:14px;
+line-height:1.5;
+opacity:0;
+}
+
+/* USER */
+
+.msg.user{
+background:   #00b8931a;
+align-self:flex-end;
+}
+
+/* BOT */
+
+.msg.bot{
+background:#f1f5f9;
+align-self:flex-start;
+transform:translateX(-40px);
+}
+
+/* BOT ANIMATION */
+
+.msg.bot.show{
+animation:botSlide .6s forwards;
+}
+
+@keyframes botSlide{
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+/* USER APPEAR */
+
+.msg.user.show{
+animation:userFade .6s forwards;
+}
+
+@keyframes userFade{
+to{opacity:1;}
+}
+
+/* TYPING DOTS */
+
+.typing{
+display:flex;
+gap:5px;
+margin-left:5px;
+opacity:0;
+}
+
+.typing span{
+width:6px;
+height:6px;
+background:#64748b;
+border-radius:50%;
+animation:typing 1s infinite;
+}
+
+.typing span:nth-child(2){
+animation-delay:.2s;
+}
+
+.typing span:nth-child(3){
+animation-delay:.4s;
+}
+
+.typing.show{
+opacity:1;
+}
+
+@keyframes typing{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-4px);}
+100%{transform:translateY(0);}
+
+}
+
+/* RIGHT TEXT */
+
+.pva-text{
+width:50%;
+}
+
+.pva-text h2{
+font-size:26px;
+margin-bottom:20px;
+}
+
+.pva-text p{
+line-height:1.7;
+color:#24243e;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.pva-buttons{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.pva-buttons button{
+background:transparent;
+border:1px solid #334155;
+color:#24243e;
+padding:12px;
+text-align:left;
+cursor:pointer;
+transition:.3s;
+}
+
+.pva-buttons button:hover{
+border-color:linear-gradient(90deg, #4f46e5, #9333ea, #f43f5e);
+transform:translateX(6px);
+}
+
+
+.auto-intro{
+text-align:center;
+max-width:700px;
+margin:0 auto 80px;
+}
+
+.auto-intro h2{
+font-size:40px;
+font-weight:700;
+margin-bottom:14px;
+background:linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.auto-intro p{
+font-size:17px;
+color:#475569;
+line-height:1.6;
+}
+.powerauto-section{
+padding:70px 10%;
+background: #f8faff;
+color:#1f2937;
+}
+
+
+.powerauto-container{
+display:flex;
+align-items:center;
+gap:70px;
+}
+/* RIGHT TEXT */
+
+.auto-text{
+width:50%;
+}
+
+.auto-text h2{
+font-size:26px;
+margin-bottom:20px;
+}
+
+.auto-text p{
+line-height:1.7;
+color:#24243e;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.auto-buttons{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.auto-buttons button{
+background:transparent;
+border:1px solid #334155;
+color:#24243e;
+padding:12px;
+text-align:left;
+cursor:pointer;
+transition:.3s;
+}
+
+.auto-buttons button:hover{
+border-color:linear-gradient(90deg, #4f46e5, #9333ea, #f43f5e);
+transform:translateX(6px);
+
+}
+
+/* RIGHT AUTOMATION UI */
+
+.automation-ui{
+width:50%;
+position:relative;
+display:flex;
+flex-direction:column;
+gap:25px;
+align-items:center;
+}
+
+/* WINDOWS */
+
+.app-window{
+
+width:360px;
+background:white;
+border-radius:14px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08),
+0 1px 2px rgba(0,0,0,.05);
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+.app-header{
+
+background:#f1f5f9;
+padding:10px 15px;
+font-size:14px;
+font-weight:600;
+
+border-radius:14px 14px 0 0;
+
+}
+
+/* EMAIL */
+
+.email-item{
+padding:18px;
+}
+
+.email-subject{
+font-weight:600;
+margin-bottom:4px;
+}
+
+.email-from{
+font-size:13px;
+color:#64748b;
+}
+
+/* EXCEL */
+
+.excel-row{
+display:flex;
+justify-content:space-between;
+padding:10px 18px;
+border-bottom:1px solid #e2e8f0;
+font-size:14px;
+}
+
+.fill{
+background:#ecfdf5;
+opacity:0;
+}
+
+/* TEAMS POPUP */
+
+.teams-popup{
+
+background:linear-gradient(135deg, #003e4dc0, #007a6e, #00b894);
+color:white;
+
+padding:12px 18px;
+border-radius:10px;
+
+font-size:14px;
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+/* ANIMATIONS */
+
+.show{
+animation:fadeUp .8s forwards;
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.fill.show{
+animation:excelFill .8s forwards;
+}
+
+@keyframes excelFill{
+to{
+opacity:1;
+}
+}
+
+.teams-popup.show{
+animation:popup .6s forwards;
+}
+
+@keyframes popup{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* POWER PLATFORM */
+
+/* ===== FADE UP (scroll sections) ===== */
+.fade-up-init {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up-show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ===== CHART BARS - smoother bounce ===== */
+.bar {
+  transition: height 0s;
+}
+.bar.animate:nth-child(1) { animation: grow1 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.0s forwards; }
+.bar.animate:nth-child(2) { animation: grow2 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.1s forwards; }
+.bar.animate:nth-child(3) { animation: grow3 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.2s forwards; }
+.bar.animate:nth-child(4) { animation: grow4 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.3s forwards; }
+.bar.animate:nth-child(5) { animation: grow5 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.4s forwards; }
+
+@keyframes grow1 { to { height: 70%; } }
+@keyframes grow2 { to { height: 90%; } }
+@keyframes grow3 { to { height: 60%; } }
+@keyframes grow4 { to { height: 80%; } }
+@keyframes grow5 { to { height: 95%; } }
+
+/* ===== STATUS POP (Power Apps) ===== */
+@keyframes statusPop {
+  0%   { transform: scale(0.8); opacity: 0; }
+  60%  { transform: scale(1.1); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* ===== GLOW PULSE (Power Automate Teams popup) ===== */
+@keyframes glowPulse {
+  0%   { box-shadow: 0 0 0px rgba(147,51,234,0); }
+  50%  { box-shadow: 0 0 20px rgba(147,51,234,0.6); }
+  100% { box-shadow: 0 0 0px rgba(147,51,234,0); }
+}
+
+/* ACTIVE BUTTON HIGHLIGHT  */
+
+.finance-buttons button,
+.supply-buttons button,
+.sales-buttons button,
+.project-buttons button,
+.crm-buttons button {
+  transition: all 0.25s ease !important;
+  border-radius: 6px;
+}
+
+/* Hover effect */
+.finance-buttons button:hover,
+.supply-buttons button:hover,
+.sales-buttons button:hover,
+.project-buttons button:hover,
+.crm-buttons button:hover {
+  background: rgba(48, 43, 99, 0.06) !important;
+  border-color: #302b63 !important;
+  transform: translateX(6px);
+  padding-left: 18px;
+}
+
+/* Active / selected state */
+.finance-buttons button.active,
+.supply-buttons button.active,
+.sales-buttons button.active,
+.project-buttons button.active,
+.crm-buttons button.active {
+  background: rgba(48, 43, 99, 0.10) !important;
+  border-color: #302b63 !important;
+  border-left: 3px solid #302b63 !important;
+  font-weight: 700 !important;
+  padding-left: 16px;
+  color: #0f0c29 !important;
+}
+
+/* ===== PLATFORM CARDS hover glow ===== */
+.platform-card {
+  transition: all 0.35s cubic-bezier(0.34,1.3,0.64,1) !important;
+}
+.platform-card:hover {
+  transform: translateY(-10px) scale(1.03) !important;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.4), 0 0 30px rgba(147,51,234,0.25) !important;
+}
+
+/* ===== CHAT WINDOW glow on show ===== */
+.chat-window.show {
+  box-shadow: 0 0 40px rgba(79,70,229,0.18) !important;
+}
+
+/* ===== Smooth counter pulse ===== */
+.counter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* ===== App window entrance ===== */
+.app-window {
+  transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.6s ease !important;
+}
+.app-window.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ===== Teams popup glow ===== */
+.teams-popup.show {
+  animation: popup 0.6s ease forwards !important;
+}
+@keyframes popup {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== TABLET (601px – 1024px) ===== */
+@media (max-width: 1024px) {
+
+  /* HERO */
+  .service-hero {
+    padding: 60px 6% 50px;
+    text-align: center;
+  }
+  .hero-content h1 { font-size: 32px; }
+  .hero-content p  { font-size: 15px; }
+
+  /* SERVICE CARDS — centered */
+  .service-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .service-hero .service-cards .service-card {
+    width: 80% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+
+  /* LOGO BADGE */
+  .logo-3d { padding: 12px 24px; }
+  .logo-3d span { font-size: 13px; }
+
+  /* SECTION INTROS */
+  .powerbi-intro,
+  .apps-intro,
+  .pva-intro,
+  .auto-intro {
+    margin: 0 auto 50px;
+  }
+  .powerbi-intro h2,
+  .apps-intro h2,
+  .pva h2,
+  .auto-intro h2 {
+    font-size: 30px;
+  }
+
+  /* SECTIONS PADDING */
+  .powerbi-section,
+  .powerapps-section,
+  .pva-section,
+  .powerauto-section {
+    padding: 60px 6%;
+  }
+
+  /* CONTAINERS */
+  .powerbi-container,
+  .apps-container,
+  .pva-container,
+  .powerauto-container {
+    gap: 36px;
+  }
+
+  /* CHAT WINDOW */
+  .chat-window { width: 360px; }
+
+  /* AUTOMATION UI */
+  .app-window { width: 300px; }
+}
+
+
+/* ===== MOBILE (max-width: 600px) ===== */
+@media (max-width: 600px) {
+
+  /* HERO */
+  .service-hero {
+    padding: 40px 5% 44px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* SERVICE CARDS — centered */
+  .service-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .service-hero .service-cards .service-card {
+    width: 80% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+
+  /* LOGO BADGE */
+  .logo-3d {
+    padding: 10px 18px;
+    gap: 10px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+  }
+  .logo-3d img { height: 26px; }
+  .logo-3d span { font-size: 11px; font-weight: 600; }
+
+  /* SECTION INTROS */
+  .powerbi-intro,
+  .apps-intro,
+  .pva-intro,
+  .auto-intro {
+    margin: 0 auto 36px;
+    padding: 0 4px;
+  }
+  .powerbi-intro h2,
+  .apps-intro h2,
+  .pva h2,
+  .auto-intro h2 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .powerbi-intro p,
+  .apps-intro p,
+  .pva-intro p,
+  .auto-intro p {
+    font-size: 14px;
+  }
+
+  /* ALL SECTIONS PADDING */
+  .powerbi-section,
+  .powerapps-section,
+  .pva-section,
+  .powerauto-section {
+    padding: 44px 5%;
+  }
+
+  /* ALL CONTAINERS — stack */
+  .powerbi-container,
+  .apps-container,
+  .pva-container,
+  .powerauto-container {
+    flex-direction: column !important;
+    gap: 28px;
+  }
+
+  /* ALL HALVES — full width */
+  .bi-dashboard,
+  .bi-text,
+  .apps-text,
+  .app-builder,
+  .pva-chatbox,
+  .pva-text,
+  .auto-text,
+  .automation-ui {
+    width: 100% !important;
+  }
+
+  /* BI DASHBOARD */
+  .bi-dashboard {
+    padding: 20px 16px;
+    border-radius: 14px;
+    transform: scale(0.92);
+    transform-origin: top center;
+    margin-bottom: -20px;
+  }
+  .kpi p { font-size: 30px; }
+  .kpi h3 { font-size: 14px; }
+  .chart-area {
+    height: 130px;
+    gap: 12px;
+    max-width: 100%;
+  }
+  .bar { width: 32px; }
+  .chart-label { font-size: 12px; }
+
+  /* BI TEXT */
+  .bi-text h2,
+  .apps-text h2,
+  .pva-text h2,
+  .auto-text h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .bi-text p,
+  .apps-text p,
+  .pva-text p,
+  .auto-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* ALL BUTTONS */
+  .bi-buttons,
+  .apps-buttons,
+  .pva-buttons,
+  .auto-buttons {
+    gap: 10px;
+  }
+  .bi-buttons button,
+  .apps-buttons button,
+  .pva-buttons button,
+  .auto-buttons button {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  /* APP BUILDER (Power Apps form) */
+  .app-builder {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+  .form-area input { padding: 8px; font-size: 13px; }
+  #submitBtn { padding: 8px; font-size: 13px; }
+
+  /* CHATBOT WINDOW */
+  .pva-chatbox {
+    justify-content: center;
+  }
+  .chat-window {
+    width: 100%;
+    padding: 18px 14px;
+    border-radius: 14px;
+    transform: scale(0.93);
+    transform-origin: top center;
+    margin-bottom: -18px;
+  }
+  .chat-header { font-size: 13px; }
+  .msg { font-size: 13px; padding: 10px 13px; }
+/* AUTOMATION UI */
+.automation-ui {
+  align-items: center;
+  gap: 0;                        
+}
+.app-window {
+  width: 88% !important;
+  border-radius: 12px;
+  transform: scale(0.88);
+  transform-origin: top center;
+  margin-bottom: 12px;           
+}
+
+.app-header { font-size: 12px; padding: 8px 12px; }
+.email-item { padding: 12px 14px; }
+.email-subject { font-size: 13px; }
+.email-from { font-size: 11px; }
+.excel-row { font-size: 12px; padding: 8px 14px; }
+.teams-popup {
+  font-size: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: 88%;
+  margin-bottom: 12px;
+}
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirka Business Solutions</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/webdev.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER-->
+<header class="header-wrapper">
+
+  <div class="top-header">
+    <div class="top-left">
+      <div class="left-item"><img src="images/Dynamics_365_Business_Central_logo.svg.webp" alt="Microsoft"><span>Microsoft Dynamics 365</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/microsoft (2).png" alt="Microsoft"><span>Microsoft Partner</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/world.png" alt="India"><span>India</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/united-arab-emirates.png" alt="UAE"><span>UAE</span></div>
+      <span class="separator">|</span>
+      <div class="left-item"><img src="images/united-states.png" alt="USA"><span>USA</span></div>
+    </div>
+    <div class="top-right">
+      <a href="mailto:sales@infinixotech.com">
+        <svg class="email-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6H20C21.1 6 22 6.9 22 8V16C22 17.1 21.1 18 20 18H4C2.9 18 2 17.1 2 16V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="2"/>
+          <path d="M22 8L12 13L2 8" stroke="white" stroke-width="2"/>
+        </svg>
+        sales@infinixotech.com
+      </a>
+      <span>|</span>
+      <a href="tel:+919428084866">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M6.62 10.79C8.06 13.66 10.34 15.94 13.21 17.38L15.41 15.18C15.79 14.8 16.36 14.68 16.84 14.88C18.27 15.43 19.84 15.7 21.5 15.7C22.33 15.7 23 16.37 23 17.2V21.5C23 22.33 22.33 23 21.5 23C10.95 23 2 14.05 2 3.5C2 2.67 2.67 2 3.5 2H7.8C8.63 2 9.3 2.67 9.3 3.5C9.3 5.16 9.57 6.73 10.12 8.16C10.32 8.64 10.2 9.21 9.82 9.59L7.62 11.79Z" stroke="white" stroke-width="2"/>
+        </svg>
+        +91 94280 84866
+      </a>
+    </div>
+  </div>
+
+<!--NAVBAR-->
+
+<div class="navbar">
+  <div class="logo-section">
+    <a href="/"><img src="images/nirka_FINAL-removebg-preview.webp" alt="NIRKA Logo"></a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="/">Home</a>
+    <a href="/about-us">About Us</a>
+
+    <!-- SERVICES DROPDOWN -->
+    <div class="nav-dropdown">
+      <a  class="nav-drop-trigger">
+        Services
+       
+      </a>
+
+      <div class="dropdown-menu">
+        <div class="dropdown-inner">
+
+        <!--Microsoft Dynamics 365 -->
+          <div class="drop-col">
+            <div class="drop-col-title">Microsoft Dynamics 365</div>
+            <a href="/business-central" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">Dynamics 365</div>
+                <div class="drop-item-sub">Finance & Accounting</div>
+                <div class="drop-item-sub">Supply Chain </div>
+                <div class="drop-item-sub">Sales & Service</div>
+                <div class="drop-item-sub">Project Management </div>
+              </div>
+            </a>
+            <a href="/crm" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">D 365 Sales(CRM)</div>
+               <div class="drop-item-sub">Sales Automation</div>
+               <div class="drop-item-sub">Marketing </div>
+               <div class="drop-item-sub">Customer Service</div>
+               <div class="drop-item-sub">AI insights </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="drop-divider"></div>
+
+          <!--Power Platform -->
+          <div class="drop-col">
+            <div class="drop-col-title">Microsoft Power Platform</div>
+            <a href="/power-platform" class="drop-item">
+             
+              <div>
+                <div class="drop-item-title">Power Platform</div>
+                <div class="drop-item-sub">Power BI</div>
+                <div class="drop-item-sub">Power Apps</div>
+                <div class="drop-item-sub">Power Virtual Agents</div>
+                <div class="drop-item-sub">Power Automate </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="drop-divider"></div>
+
+          <!--Web & App Dev -->
+          <div class="drop-col">
+            <div class="drop-col-title">Development</div>
+            <a href="/web-app-development" class="drop-item">
+              
+              <div>
+                <div class="drop-item-title">Web & App Development</div>
+                <div class="drop-item-sub">Web Development</div>
+                <div class="drop-item-sub">App Development</div>
+                <div class="drop-item-sub">E-commerce</div>
+                <div class="drop-item-sub">MS integration</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM CTA BAR -->
+        <div class="drop-footer">
+          <span>Ready to transform your business?</span>
+          <a href="/contact-us" class="drop-cta">Talk to an Expert →</a>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="/careers">Career At NIRKA</a>
+    <a href="/why-us">Why NIRKA?</a>
+   <a href="/contact-us" class="nav-btn">Contact Us</a>
+  </nav>
+</div>
+
+
+<!--MOBILE MENU-->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-menu" onclick="toggleMenu()">← Back</div>
+  <a href="/" class="mobile-link">Home</a>
+  <a href="/about-us" class="mobile-link">About Us</a>
+
+  <!-- Mobile Services Accordion -->
+  <div class="mobile-accordion">
+    <div class="mobile-acc-trigger" onclick="toggleMobileAcc(this)">
+      Services
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+        <path d="M6 9L12 15L18 9" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="mobile-acc-body">
+      <div class="mobile-acc-section">Microsoft Dynamics 365</div>
+      <a href="/business-central" class="mobile-link sub">Business Central 365</a>
+      <a href="/crm" class="mobile-link sub">Dynamics 365 Sales(CRM)</a>
+      <div class="mobile-acc-section">Power Platform</div>
+      <a href="/power-platform" class="mobile-link sub">Power Platform</a>
+      <div class="mobile-acc-section">Development</div>
+      <a href="/web-app-development" class="mobile-link sub">Web & App Development</a>
+    </div>
+  </div>
+
+  <a href="/careers" class="mobile-link">Career At NIRKA</a>
+  <a href="/why-us" class="mobile-link">Why NIRKA?</a>
+  <a href="/contact-us" class="mobile-link">Contact Us</a>
+</div>
+<div class="menu-overlay" id="menuOverlay" onclick="toggleMenu()"></div>
+</header>
+
+<!-- Floating Contact Buttons -->
+<div class="contact-widget">
+  <a href="mailto:sales@infinixotech.com" class="contact-btn email" title="Email Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M4 6H20C21.1 6 22 6.9 22 8V16C22 17.1 21.1 18 20 18H4C2.9 18 2 17.1 2 16V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="2"/>
+      <path d="M22 8L12 13L2 8" stroke="white" stroke-width="2"/>
+    </svg>
+  </a>
+  <a href="tel:+919428084866" class="contact-btn call" title="Call Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M6.62 10.79C8.06 13.66 10.34 15.94 13.21 17.38L15.41 15.18C15.79 14.8 16.36 14.68 16.84 14.88C18.27 15.43 19.84 15.7 21.5 15.7C22.33 15.7 23 16.37 23 17.2V21.5C23 22.33 22.33 23 21.5 23C10.95 23 2 14.05 2 3.5C2 2.67 2.67 2 3.5 2H7.8C8.63 2 9.3 2.67 9.3 3.5C9.3 5.16 9.57 6.73 10.12 8.16C10.32 8.64 10.2 9.21 9.82 9.59L7.62 11.79Z" stroke="white" stroke-width="2"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/919428084866" class="contact-btn whatsapp" title="Chat on WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24">
+      <path fill="white" d="M12.04 2C6.53 2 2 6.48 2 12c0 1.93.57 3.72 1.55 5.23L2 22l4.92-1.51A9.95 9.95 0 0 0 12.04 22C17.55 22 22 17.52 22 12S17.55 2 12.04 2zm5.67 14.27c-.24.67-1.4 1.29-1.93 1.36-.5.07-1.13.1-1.83-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.16-4.95-4.36-.15-.2-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1-2.41.26-.29.58-.36.77-.36h.56c.18 0 .42-.07.66.5.24.58.83 2.01.9 2.15.07.14.12.3.02.48-.1.18-.15.29-.29.45-.14.16-.3.35-.43.47-.14.14-.28.3-.12.58.16.29.7 1.15 1.51 1.86 1.04.93 1.92 1.22 2.2 1.36.28.14.45.12.61-.07.16-.18.71-.83.9-1.11.18-.29.36-.24.61-.14.24.1 1.55.73 1.82.86.27.14.45.2.52.31.07.11.07.67-.17 1.34z"/>
+    </svg>
+  </a>
+</div>
+
+<!--hERO-->
+<section class="service-hero">
+  <div class="logo-3d">
+  <img src="images/a-cinematic-3d-logo-centered-on-a-pure-infinite-wh-removebg-preview.webp" alt="Web Dev Logo">
+  <span>Web Development & Digital Solutions</span>
+</div>
+  <div class="hero-content">
+    
+    <h1>Web & App Development</h1>
+    <p>Custom websites, mobile apps, and e-commerce solutions — built to integrate seamlessly with Microsoft Dynamics 365.</p>
+  </div>
+  <div class="service-cards">
+    <a href="#wd-web" class="service-card">
+      
+      <h3>Web Development</h3>
+      <p>Modern, fast & responsive websites</p>
+    </a>
+    <a href="#wd-app" class="service-card">
+      
+      <h3>App Development</h3>
+      <p>iOS & Android apps for your business</p>
+    </a>
+    <a href="#wd-ecom" class="service-card">
+      
+      <h3>E-Commerce</h3>
+      <p>Online stores connected to BC & CRM</p>
+    </a>
+    <a href="#wd-integration" class="service-card">
+      
+      <h3>MS Integration</h3>
+      <p>Connect apps to Dynamics 365</p>
+    </a>
+  </div>
+</section>
+
+<!-- web development -->
+<section class="wd-section light-bg" id="wd-web">
+
+ <!--INTRO-->
+<div class="apps-intro">
+
+<h2>Custom Web & App Development</h2>
+
+<p>
+<p>
+We develop modern, high-performance websites and applications that
+enhance digital experiences, improve customer engagement, and help
+businesses scale efficiently.
+</p>
+</p>
+</div>
+  <div class="wd-inner">
+
+    <!-- LEFT -->
+    <div class="wd-visual" id="web-visual">
+      <div class="browser-wrap">
+        <div class="brow-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <div class="brow-url">www.yourclient.com</div>
+        </div>
+        <div class="brow-body">
+          <div class="brow-nav">
+            <div class="brow-logo-text">NirkaClient</div>
+            <div class="brow-nav-links">
+              <span class="brow-nav-text">Home</span>
+              <span class="brow-nav-text">About</span>
+              <span class="brow-nav-text">Services</span>
+            </div>
+            <div class="brow-btn">Contact Us</div>
+          </div>
+          <div class="brow-hero">
+            <div class="brow-h-text">
+              <div class="brow-h-heading" id="typingHeading">Grow Your Business<span class="brow-cursor">|</span></div>
+              <div class="brow-h-sub">Trusted by 500+ companies across India & UAE</div>
+              <div class="brow-h-cta">Get Started →</div>
+            </div>
+            <div class="brow-h-img">
+              <i class="fas fa-chart-line brow-h-icon"></i>
+            </div>
+          </div>
+          <div class="brow-stats-row">
+            <div class="brow-stat"><span class="brow-stat-num">500+</span><span class="brow-stat-label">Clients</span></div>
+            <div class="brow-stat"><span class="brow-stat-num">98%</span><span class="brow-stat-label">Satisfaction</span></div>
+            <div class="brow-stat"><span class="brow-stat-num">10+</span><span class="brow-stat-label">Years Exp.</span></div>
+          </div>
+          <div class="brow-cards">
+            <div class="brow-card bc1">
+              <div class="brow-card-icon"><i class="fas fa-globe"></i></div>
+              <div class="brow-card-title">Web Design</div>
+              <div class="brow-card-line"></div>
+              <div class="brow-card-line short"></div>
+            </div>
+            <div class="brow-card bc2">
+              <div class="brow-card-icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="brow-card-title">Mobile App</div>
+              <div class="brow-card-line"></div>
+              <div class="brow-card-line short"></div>
+            </div>
+            <div class="brow-card bc3">
+              <div class="brow-card-icon"><i class="fas fa-shopping-cart"></i></div>
+              <div class="brow-card-title">E-Commerce</div>
+              <div class="brow-card-line"></div>
+              <div class="brow-card-line short"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="wd-text" id="web-text">
+     
+      <h2 id="webTitle">Responsive Web Design</h2>
+      <p id="webDesc">We design and develop websites that look stunning on every device — from desktop to mobile — with modern UI/UX, fast load times, and SEO-ready structure built in from day one.</p>
+      <div class="wd-btns">
+        <button class="wd-btn active" onclick="switchWebBtn(this, 0)">Responsive Web Design</button>
+        <button class="wd-btn" onclick="switchWebBtn(this, 1)">SEO & Performance</button>
+        <button class="wd-btn" onclick="switchWebBtn(this, 2)">CMS & Easy Editing</button>
+        <button class="wd-btn" onclick="switchWebBtn(this, 3)">Microsoft Integration</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--app development-->
+<section class="wd-section white-bg" id="wd-app">
+
+<div class="apps-intro">
+
+<h2>Modern Web & Mobile Solutions for Growing Businesses</h2>
+
+<p>
+We design high-performance websites and mobile applications that
+deliver better digital experiences, automate workflows, and help
+businesses scale efficiently.
+</p>
+
+</div>
+
+  <div class="wd-inner reverse">
+
+    <!--RIGHT-->
+    <div class="wd-visual" id="app-visual">
+      <div class="phone-wrap">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ph-topbar">
+              <span class="ph-topbar-title">Dashboard</span>
+              <i class="fas fa-bell ph-topbar-icon"></i>
+            </div>
+            <div class="ph-kpis">
+              <div class="ph-kpi" data-delay="0">
+                <div class="ph-kpi-val" data-target="148">0</div>
+                <div class="ph-kpi-label">New Leads</div>
+              </div>
+              <div class="ph-kpi" data-delay="200">
+                <div class="ph-kpi-val" data-target="92">0</div>
+                <div class="ph-kpi-label">Orders</div>
+              </div>
+            </div>
+            <div class="ph-chart-label">Monthly Sales</div>
+            <div class="ph-chart">
+              <div class="ph-bar" data-h="38"></div>
+              <div class="ph-bar" data-h="52"></div>
+              <div class="ph-bar" data-h="32"></div>
+              <div class="ph-bar" data-h="60"></div>
+              <div class="ph-bar" data-h="45"></div>
+              <div class="ph-bar" data-h="66"></div>
+            </div>
+            <div class="ph-chart-months">
+              <span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span>
+            </div>
+            <div class="ph-list-label">Recent Activities</div>
+            <div class="ph-list">
+              <div class="ph-item" data-delay="0">
+                <div class="ph-dot"></div>
+                <div class="ph-item-lines">
+                  <div class="ph-item-title">New lead: Raj Enterprises</div>
+                  <div class="ph-item-sub">2 mins ago</div>
+                </div>
+                <div class="ph-badge open">New</div>
+              </div>
+              <div class="ph-item" data-delay="150">
+                <div class="ph-dot done-dot"></div>
+                <div class="ph-item-lines">
+                  <div class="ph-item-title">Order #1042 shipped</div>
+                  <div class="ph-item-sub">15 mins ago</div>
+                </div>
+                <div class="ph-badge done">Done</div>
+              </div>
+              <div class="ph-item" data-delay="300">
+                <div class="ph-dot"></div>
+                <div class="ph-item-lines">
+                  <div class="ph-item-title">Invoice #882 pending</div>
+                  <div class="ph-item-sub">1 hr ago</div>
+                </div>
+                <div class="ph-badge open">Pending</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--LEFT-->
+    <div class="wd-text" id="app-text">
+     
+      <h2 id="appTitle">iOS & Android Apps</h2>
+      <p id="appDesc">We build cross-platform mobile applications that give your team and customers access to real-time business data — anytime, anywhere, on any device.</p>
+      <div class="wd-btns">
+        <button class="wd-btn active" onclick="switchAppBtn(this, 0)">iOS & Android Apps</button>
+        <button class="wd-btn" onclick="switchAppBtn(this, 1)">Dynamics 365 Mobile</button>
+        <button class="wd-btn" onclick="switchAppBtn(this, 2)">Push Notifications</button>
+        <button class="wd-btn" onclick="switchAppBtn(this, 3)">Offline Mode Support</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- e-commerce-->
+<section class="wd-section light-bg" id="wd-ecom">
+
+  <!--INTRO-->
+<div class="apps-intro">
+
+<h2>Smart E-Commerce Solutions</h2>
+
+<p>
+We build powerful online stores that integrate seamlessly with
+Microsoft Dynamics 365 Business Central, ensuring real-time
+inventory, automated orders, and a smooth shopping experience
+for your customers.
+</p>
+
+</div>
+  <div class="wd-inner">
+
+    <!-- LEFT -->
+    <div class="wd-visual" id="ecom-visual">
+      <div class="store-wrap">
+        <div class="store-topbar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <div class="brow-url">shop.yourclient.com</div>
+        </div>
+        <div class="store-body">
+          <div class="store-nav">
+            <div class="sn-logo"></div>
+            <div class="sn-search"></div>
+            <i class="fas fa-shopping-cart sn-cart-icon"></i>
+          </div>
+          <div class="store-grid">
+            <div class="store-item" data-delay="0">
+              <div class="si-img si1">
+                <i class="fas fa-laptop si-icon"></i>
+              </div>
+              <div class="si-name-text">Laptop Stand Pro</div>
+              <div class="si-price-text">₹2,499</div>
+              <div class="si-stock">In Stock: 42 units</div>
+              <div class="si-btn">Add to Cart</div>
+            </div>
+            <div class="store-item" data-delay="180">
+              <div class="si-img si2">
+                <i class="fas fa-headphones si-icon"></i>
+              </div>
+              <div class="si-name-text">Wireless Headset</div>
+              <div class="si-price-text">₹3,999</div>
+              <div class="si-stock">In Stock: 18 units</div>
+              <div class="si-btn">Add to Cart</div>
+            </div>
+            <div class="store-item" data-delay="360">
+              <div class="si-img si3">
+                <i class="fas fa-keyboard si-icon"></i>
+              </div>
+              <div class="si-name-text">Mech Keyboard</div>
+              <div class="si-price-text">₹5,299</div>
+              <div class="si-stock">In Stock: 7 units</div>
+              <div class="si-btn">Add to Cart</div>
+            </div>
+          </div>
+          <div class="store-sync-badge">
+            <i class="fas fa-sync-alt"></i> Live sync with Business Central
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT-->
+    <div class="wd-text" id="ecom-text">
+      
+      <h2 id="ecomTitle">BC-Integrated Online Store</h2>
+      <p id="ecomDesc">Your e-commerce store syncs in real time with Business Central — so inventory, orders, invoices, and customer data are always accurate across every channel automatically.</p>
+      <div class="wd-btns">
+        <button class="wd-btn active" onclick="switchEcomBtn(this, 0)">BC-Integrated Online Store</button>
+        <button class="wd-btn" onclick="switchEcomBtn(this, 1)">Real-Time Inventory Sync</button>
+        <button class="wd-btn" onclick="switchEcomBtn(this, 2)">Automated Order & Billing</button>
+        <button class="wd-btn" onclick="switchEcomBtn(this, 3)">Multi-Channel Selling</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MS integration -->
+<section class="wd-section white-bg" id="wd-integration">
+
+  <!--INTRO-->
+<div class="apps-intro">
+
+<h2>Microsoft Dynamics 365 Integration</h2>
+
+<p>
+Connect your website, applications, and e-commerce platforms directly
+with Dynamics 365 Business Central and CRM to automate workflows and
+ensure real-time data across your entire business ecosystem.
+</p>
+
+</div>
+  <div class="wd-inner reverse">
+
+    <!-- RIGHT -->
+    <div class="wd-visual" id="int-visual">
+      <div class="int-board">
+        <div class="int-board-header">🔗 Integration Flow</div>
+        <div class="int-flow">
+          <div class="int-step" data-delay="0">
+            <div class="int-icon web"><i class="fas fa-globe"></i></div>
+            <div class="int-step-info">
+              <div class="int-step-title">Your Website / App</div>
+              <div class="int-step-sub">Customer fills form / places order</div>
+            </div>
+            <div class="int-step-badge sending">Sending...</div>
+          </div>
+          <div class="int-connector" data-delay="300">
+            <div class="int-conn-line"></div>
+            <div class="int-conn-dot"></div>
+          </div>
+          <div class="int-step" data-delay="600">
+            <div class="int-icon api"><i class="fas fa-code"></i></div>
+            <div class="int-step-info">
+              <div class="int-step-title">Custom API Layer</div>
+              <div class="int-step-sub">Data validated & transformed</div>
+            </div>
+            <div class="int-step-badge processing">Processing</div>
+          </div>
+          <div class="int-connector" data-delay="900">
+            <div class="int-conn-line"></div>
+            <div class="int-conn-dot"></div>
+          </div>
+          <div class="int-step" data-delay="1200">
+            <div class="int-icon d365"><i class="fas fa-cloud"></i></div>
+            <div class="int-step-info">
+              <div class="int-step-title">Dynamics 365</div>
+              <div class="int-step-sub">BC + CRM + Power Platform updated</div>
+            </div>
+            <div class="int-step-badge synced">✓ Synced</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--LEFT-->
+    <div class="wd-text" id="int-text">
+      
+      <h2 id="intTitle">Seamless Dynamics 365 Connect</h2>
+      <p id="intDesc">We build custom APIs and connectors that link your website or app directly to Dynamics 365 — so data flows automatically between your digital touchpoints and your ERP/CRM.</p>
+      <div class="wd-btns">
+        <button class="wd-btn active" onclick="switchIntBtn(this, 0)">Seamless Dynamics 365 Connect</button>
+        <button class="wd-btn" onclick="switchIntBtn(this, 1)">Custom API Development</button>
+        <button class="wd-btn" onclick="switchIntBtn(this, 2)">Power Platform Extensions</button>
+        <button class="wd-btn" onclick="switchIntBtn(this, 3)">Real-Time Data Sync</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--FOOTER-->
+<footer class="footer">
+  <div class="footer-top">
+    <h2>Let's Connect</h2>
+    <p>Start your digital transformation journey with Nirka Business Solutions and discover what's possible for your business.</p>
+    <a href="/contact-us" class="footer-cta">Contact Us</a>
+  </div>
+  <div class="footer-main">
+    <div class="footer-col"><p>Empowering businesses through Microsoft Business Applications and modern IT solutions.</p></div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about-us">About Us</a><a href="/why-us">Why NIRKA?</a><a href="/careers">Careers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="/contact-us">Contact Us</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <a href="https://www.google.com/maps/search/?api=1&query=Vadodara,Gujarat,India" class="contact-item"><img src="images/location.png" alt="Location"><span>Vadodara, Gujarat, India</span></a>
+      <a href="mailto:sales@infinixotech.com" class="contact-item"><img src="images/mail (2).png" alt="Email"><span>sales@infinixotech.com</span></a>
+      <a href="tel:+919428084866" class="contact-item"><img src="images/phone-receiver-silhouette (1).png" alt="Phone"><span>+91 94280 84866</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&#169; 2026 Nirka Business Solutions. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/company/nirka/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/USERNAME" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!--popup-->
+<div id="demoFormPopup" class="popup-form">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Get In Touch</h2>
+    <form id="demoForm" method="POST">
+      <input type="text" name="firstname" placeholder="Your Name" required>
+      <input type="text" name="lastname" placeholder="Last Name">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="organization" placeholder="Company Name">
+      <textarea name="question" placeholder="Your Message / Requirements" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="demoFormMsg"></p>
+  </div>
+</div>
+
+<script src="js/service.js"></script>
+<script src="js/webdev.js"></script>
+<script src="js/popup.js"></script>
+</body>
+</html>

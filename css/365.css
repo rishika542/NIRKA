@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-brands, .fa-regular {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-weight: 900 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p, a, span, li, input, textarea, button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+}
+/*  HERO  */
+.service-hero {
+
+   background: linear-gradient(135deg, 
+    #0a1628a2,    
+    #0d3c56e1,    
+    #0a6e6e,    
+    #0d9488,    
+    #06b6d4     
+  );
+  color: white;
+}
+.logo-3d img {
+ transform: scale(1.8);   
+}
+
+/*  SHARED SECTION STYLES  */
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 80px;
+}
+.section-intro h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 14px;
+    background: linear-gradient(135deg, 
+    #0a1628a2,   
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488,    
+    #06b6d4     
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-intro p {
+  font-size: 17px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ===== AI BIG CARD ===== */
+.ai-card-big {
+  display: flex; align-items: center; gap: 20px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(6,182,212,0.25);
+  border-radius: 14px;
+  padding: 20px 28px;
+  margin: 0 auto 28px auto;  
+  position: relative; overflow: hidden;
+  width: 100%;
+  max-width: 700px;  
+  flex: 1;
+  
+}
+.ai-card-big::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #06b6d4, #0d9488, transparent);
+}
+
+.ai-card-big::after {
+  content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  animation: aiBigShimmer 3s ease infinite;
+}
+
+@keyframes aiBigShimmer { 0%{left:-100%} 100%{left:200%} }
+
+.ai-icon-big {
+  width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+  background: linear-gradient(135deg, #0d3d56, #0d9488);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.ai-card-big-text h4 {
+  font-size: 16px; font-weight: 700; color: white; margin: 0 0 4px;
+}
+.ai-card-big-text p {
+  font-size: 12px; color: rgba(255,255,255,0.6); margin: 0;
+    
+}
+
+.ai-powered-tag {
+  margin-right: 0px;
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; color: #06b6d4;
+  letter-spacing: 1px; text-transform: uppercase; flex-shrink: 0;
+  background: rgba(6,182,212,0.1);
+  border: 1px solid rgba(6,182,212,0.3);
+  padding: 6px 14px;
+  border-radius: 20px;
+   margin-left: auto; 
+}
+
+.dot5 {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #06b6d4; box-shadow: 0 0 8px #06b6d4;
+  animation: aiDotPulse 1.5s ease infinite;
+}
+
+@keyframes aiDotPulse {
+  0%,100%{opacity:1; transform:scale(1)}
+  50%{opacity:0.3; transform:scale(1.8)}
+}
+
+/* ===== FINANCE SECTION ===== */
+.bc-finance-section {
+  padding: 70px 10%;
+  background: #f8faff;
+  color: #1f2937;
+}
+.bc-finance-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/* LEFT - Live Ledger UI */
+.finance-dashboard {
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0,120,212,0.2);
+  padding: 30px;
+  overflow: hidden;
+}
+.fd-header {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+.fd-kpis {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.fd-kpi {
+  flex: 1;
+  background: #f8faff;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+.fd-kpi .label { font-size: 11px; color: #64748b; margin-bottom: 4px; }
+.fd-kpi .value {
+  font-size: 22px;
+  font-weight: 700;
+   background: linear-gradient(135deg, 
+    #0a1628,    
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488,    
+    #06b6d4     
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fd-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.fd-table th {
+   background: linear-gradient(135deg, 
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488  
+  );
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+}
+.fd-table td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; }
+.fd-table tr:nth-child(even) td { background: #f8faff; }
+
+.fd-row {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: .5s;
+}
+.fd-row.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.badge.paid     { background: #dcfce7; color: #16a34a; }
+.badge.pending  { background: #fef9c3; color: #ca8a04; }
+.badge.approved { background: #dbeafe; color: #1d4ed8; }
+
+/* RIGHT TEXT */
+.finance-text { width: 50%; }
+.finance-text h2 { font-size: 26px; margin-bottom: 20px; }
+.finance-text p  { line-height: 1.7; color: #24243e; margin-bottom: 30px; }
+
+.finance-buttons { display: flex; flex-direction: column; gap: 15px; }
+.finance-buttons button {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #24243e;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 14px;
+}
+.finance-buttons button:hover { transform: translateX(6px); }
+
+
+/* ===== SUPPLY CHAIN SECTION ===== */
+.bc-supply-section {
+  padding: 70px 10%;
+  background: #f8faff;
+  color: #1f2937;
+}
+.bc-supply-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/* LEFT TEXT */
+.supply-text { width: 50%; }
+.supply-text h2 { font-size: 26px; margin-bottom: 20px; }
+.supply-text p  { line-height: 1.7; color: #24243e; margin-bottom: 30px; }
+
+.supply-buttons { display: flex; flex-direction: column; gap: 15px; }
+.supply-buttons button {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #24243e;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 14px;
+}
+.supply-buttons button:hover { transform: translateX(6px); }
+
+/* RIGHT */
+.supply-flow {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+.supply-step {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 24px;
+  width: 340px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: .6s;
+}
+.supply-step.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.supply-icon {
+  width: 42px;
+  height: 42px;
+    background: linear-gradient(135deg, 
+    
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488  
+   
+  );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.supply-step-info h4 { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+.supply-step-info p  { font-size: 12px; color: #64748b; margin: 0; }
+
+.supply-connector {
+  width: 2px;
+  height: 24px;
+   background: linear-gradient(135deg, 
+    #0a1628,   
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488,   
+    #06b6d4     
+  );
+  opacity: 0;
+  transition: .4s;
+}
+.supply-connector.show { opacity: 1; }
+
+
+/* ===== SALES SECTION ===== */
+.bc-sales-section {
+  padding: 70px 10%;
+  background: #f8faff;
+  color: #1f2937;
+}
+.bc-sales-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/* LEFT  */
+.sales-dashboard {
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(0,120,212,0.2);
+}
+.sales-header {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+.sales-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  height: 160px;
+  border-bottom: 2px solid #cbd5f5;
+  margin-bottom: 16px;
+}
+.s-bar-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: 6px;
+  flex: 1;
+  height: 100%;
+}
+.s-bar {
+  width: 100%;
+    background: linear-gradient(135deg, 
+    
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488  
+  );
+  
+  height: 0;
+  border-radius: 6px 6px 0 0;
+  transition: height 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  align-self: flex-end;
+}
+.s-label { font-size: 11px; color: #64748b; }
+.sales-total {
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+.sales-total span {
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* RIGHT TEXT */
+.sales-text { width: 50%; }
+.sales-text h2 { font-size: 26px; margin-bottom: 20px; }
+.sales-text p  { line-height: 1.7; color: #24243e; margin-bottom: 30px; }
+
+.sales-buttons { display: flex; flex-direction: column; gap: 15px; }
+.sales-buttons button {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #24243e;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 14px;
+}
+.sales-buttons button:hover { transform: translateX(6px); }
+
+
+/* ===== PROJECT MANAGEMENT SECTION ===== */
+.bc-project-section {
+  padding: 70px 10%;
+  background: #f8faff;
+  color: #1f2937;
+}
+.bc-project-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/* LEFT TEXT */
+.project-text { width: 50%; }
+.project-text h2 { font-size: 26px; margin-bottom: 20px; }
+.project-text p  { line-height: 1.7; color: #24243e; margin-bottom: 30px; }
+
+.project-buttons { display: flex; flex-direction: column; gap: 15px; }
+.project-buttons button {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #24243e;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 14px;
+}
+.project-buttons button:hover { transform: translateX(6px); }
+
+/* RIGHT - Gantt Chart */
+.gantt-board {
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(0,120,212,0.2);
+}
+.gantt-header {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.gantt-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.gantt-task {
+  font-size: 12px;
+  width: 110px;
+  color: #475569;
+  flex-shrink: 0;
+}
+.gantt-track {
+  flex: 1;
+  background: #f1f5f9;
+  border-radius: 20px;
+  height: 22px;
+  overflow: hidden;
+}
+.gantt-bar {
+  height: 100%;
+    background: linear-gradient(135deg, 
+    
+    #0d3d56,    
+    #0a6e6e,    
+    #0d9488  
+   
+  );
+  border-radius: 20px;
+  width: 0;
+  transition: width 1.4s ease;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.gantt-bar span {
+  font-size: 11px;
+  color: white;
+  white-space: nowrap;
+}
+.gantt-pct {
+  font-size: 11px;
+  color: #64748b;
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .bc-finance-container,
+  .bc-supply-container,
+  .bc-sales-container,
+  .bc-project-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .finance-dashboard, .finance-text,
+  .supply-text, .supply-flow,
+  .sales-dashboard, .sales-text,
+  .project-text, .gantt-board {
+    width: 100%;
+  }
+  .supply-step { width: 100%; }
+  .bc-hero h1 { font-size: 28px; }
+  .section-intro h2 { font-size: 28px; }
+}
+
+/* ===== FADE UP ===== */
+.fade-up-init {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-up-show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ===== CHART BARS ===== */
+.bar {
+  transition: height 0s;
+}
+.bar.animate:nth-child(1) { animation: grow1 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.0s forwards; }
+.bar.animate:nth-child(2) { animation: grow2 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.1s forwards; }
+.bar.animate:nth-child(3) { animation: grow3 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.2s forwards; }
+.bar.animate:nth-child(4) { animation: grow4 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.3s forwards; }
+.bar.animate:nth-child(5) { animation: grow5 1.4s cubic-bezier(0.34,1.56,0.64,1) 0.4s forwards; }
+
+@keyframes grow1 { to { height: 70%; } }
+@keyframes grow2 { to { height: 90%; } }
+@keyframes grow3 { to { height: 60%; } }
+@keyframes grow4 { to { height: 80%; } }
+@keyframes grow5 { to { height: 95%; } }
+
+/* ===== STATUS POP (Power Apps) ===== */
+@keyframes statusPop {
+  0%   { transform: scale(0.8); opacity: 0; }
+  60%  { transform: scale(1.1); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* ===== GLOW PULSE (Power Automate Teams popup) ===== */
+@keyframes glowPulse {
+  0%   { box-shadow: 0 0 0px rgba(147,51,234,0); }
+  50%  { box-shadow: 0 0 20px rgba(147,51,234,0.6); }
+  100% { box-shadow: 0 0 0px rgba(147,51,234,0); }
+}
+
+/* ===== BUTTON ACTIVE STATE ===== */
+.bi-buttons button,
+.apps-buttons button,
+.pva-buttons button,
+.auto-buttons button {
+  transition: all 0.25s ease !important;
+  border-radius: 6px;
+}
+
+.bi-buttons button:hover,
+.apps-buttons button:hover,
+.pva-buttons button:hover,
+.auto-buttons button:hover {
+  background: rgba(48,43,99,0.06) !important;
+  border-color: #302b63 !important;
+  transform: translateX(6px);
+}
+
+/* ===== PLATFORM CARDS hover glow ===== */
+.platform-card {
+  transition: all 0.35s cubic-bezier(0.34,1.3,0.64,1) !important;
+}
+.platform-card:hover {
+  transform: translateY(-10px) scale(1.03) !important;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.4), 0 0 30px rgba(147,51,234,0.25) !important;
+}
+
+/* ===== CHAT WINDOW glow on show ===== */
+.chat-window.show {
+  box-shadow: 0 0 40px rgba(79,70,229,0.18) !important;
+}
+
+/* ===== Smooth counter pulse ===== */
+.counter {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* ===== TABLET (601px – 1024px) ===== */
+@media (max-width: 1024px) {
+.service-hero .service-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .service-hero .service-cards .service-card {
+    width: 65% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    float: none !important;
+  }
+  /* HERO */
+  .service-hero {
+    padding: 60px 6% 50px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content p {
+    font-size: 15px;
+  }
+  .service-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  /* LOGO 3D BADGE */
+  .logo-3d {
+    padding: 12px 24px;
+  }
+  .logo-3d img {
+    transform: scale(1.5);
+  }
+  .logo-3d span {
+    font-size: 13px;
+  }
+
+  /* SECTION INTRO */
+  .section-intro {
+    margin: 0 auto 50px;
+  }
+  .section-intro h2 {
+    font-size: 30px;
+  }
+
+  /* ALL SECTION CONTAINERS */
+  .bc-finance-container,
+  .bc-supply-container,
+  .bc-sales-container,
+  .bc-project-container {
+    gap: 36px;
+  }
+
+  /* SECTIONS PADDING */
+  .bc-finance-section,
+  .bc-supply-section,
+  .bc-sales-section,
+  .bc-project-section {
+    padding: 60px 6%;
+  }
+
+  /* SUPPLY STEP WIDTH */
+  .supply-step {
+    width: 100%;
+  }
+
+  /* GANTT TASK LABEL */
+  .gantt-task {
+    width: 85px;
+    font-size: 11px;
+  }
+}
+
+
+/* ===== MOBILE (max-width: 600px) ===== */
+@media (max-width: 600px) {
+
+
+  .service-hero .service-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .service-hero .service-cards .service-card {
+    width: 65% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    float: none !important;
+  }
+
+  /* HERO */
+  .service-hero {
+    padding: 40px 5% 44px;
+    text-align: center;
+    
+  }
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .hero-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 28px;
+       flex-direction: column !important;
+    align-items: center !important;
+  }
+  .service-card {
+    padding: 18px 20px;
+    border-radius: 14px;
+     width: 65% !important; 
+  }
+  .service-card h3 {
+    font-size: 15px;
+  }
+  .service-card p {
+    font-size: 13px;
+  }
+
+  /* LOGO 3D BADGE */
+  .logo-3d {
+    padding: 10px 18px;
+    gap: 10px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+  }
+  .logo-3d img {
+    height: 28px;
+    transform: scale(1.3);
+  }
+  .logo-3d span {
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  /* SECTION INTRO */
+  .section-intro {
+    margin: 0 auto 36px;
+    padding: 0 4px;
+  }
+  .section-intro h2 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .section-intro p {
+    font-size: 14px;
+  }
+
+  /* ALL SECTIONS PADDING */
+  .bc-finance-section,
+  .bc-supply-section,
+  .bc-sales-section,
+  .bc-project-section {
+    padding: 44px 5%;
+  }
+
+  /* ALL CONTAINERS — stack vertically */
+  .bc-finance-container,
+  .bc-supply-container,
+  .bc-sales-container,
+  .bc-project-container {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* ALL HALVES — full width */
+  .finance-dashboard, .finance-text,
+  .supply-text, .supply-flow,
+  .sales-dashboard, .sales-text,
+  .project-text, .gantt-board {
+    width: 100% !important;
+  }
+
+  /* FINANCE DASHBOARD */
+  .finance-dashboard {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+  .fd-kpis {
+    gap: 10px;
+  }
+  .fd-kpi {
+    padding: 10px 8px;
+  }
+  .fd-kpi .value {
+    font-size: 17px;
+  }
+  .fd-table {
+    font-size: 11px;
+  }
+  .fd-table th,
+  .fd-table td {
+    padding: 8px 8px;
+  }
+  .badge {
+    font-size: 9px;
+    padding: 2px 7px;
+  }
+
+  /* FINANCE TEXT */
+  .finance-text h2,
+  .supply-text h2,
+  .sales-text h2,
+  .project-text h2 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .finance-text p,
+  .supply-text p,
+  .sales-text p,
+  .project-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* ALL BUTTONS */
+  .finance-buttons button,
+  .supply-buttons button,
+  .sales-buttons button,
+  .project-buttons button {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+  .finance-buttons,
+  .supply-buttons,
+  .sales-buttons,
+  .project-buttons {
+    gap: 10px;
+  }
+
+  /* SUPPLY FLOW */
+  .supply-flow {
+    
+     align-items: center !important; 
+  }
+  .supply-step {
+    width: 100% !important;
+    padding: 14px 16px;
+    border-radius: 10px;
+  }
+  .supply-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  .supply-step-info h4 {
+    font-size: 13px;
+  }
+  .supply-step-info p {
+    font-size: 11px;
+  }
+  .supply-connector {
+    height: 16px;
+  }
+
+  /* SALES CHART */
+  .sales-dashboard {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+  .sales-chart {
+    height: 120px;
+    gap: 8px;
+  }
+  .s-label {
+    font-size: 10px;
+  }
+  .sales-total {
+    font-size: 12px;
+  }
+
+  /* GANTT */
+  .gantt-board {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+  .gantt-row {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .gantt-task {
+    width: 72px;
+    font-size: 10px;
+  }
+  .gantt-track {
+    height: 18px;
+  }
+  .gantt-bar span {
+    font-size: 9px;
+  }
+  .gantt-pct {
+    font-size: 10px;
+    width: 28px;
+  }
+
+  /* KPI COUNTER */
+  .counter-finance {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-card-big {
+    flex-direction: column;   /* stack items */
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 14px;
+  }
+
+  .ai-icon-big {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ai-card-big-text h4 {
+    font-size: 14px;
+  }
+
+  .ai-card-big-text p {
+    font-size: 12px;
+  }
+
+  .ai-powered-tag {
+    margin-left: 0;          
+    align-self: flex-start;  
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .dot5 {
+    width: 6px;
+    height: 6px;
+  }
+}
